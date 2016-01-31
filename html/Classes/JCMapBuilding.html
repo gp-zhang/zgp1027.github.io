@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCAnnotationDelegate Protocol Reference</title>
+	<title>JCMapBuilding Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -58,7 +58,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/mapView:viewForAnnotation:">- mapView:viewForAnnotation:</option>
+		<option value="//api/name/setUpLocationManager:">- setUpLocationManager:</option>
 		
 	</optgroup>
 	
@@ -75,13 +75,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCAnnotationDelegate Protocol Reference</h1>
+					<h1 class="title">JCMapBuilding Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>JCAnnotation.h</td>
+	<td>JCMapBuilding.h<br />JCMapBuilding.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,9 +102,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/mapView:viewForAnnotation:" title="mapView:viewForAnnotation:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:viewForAnnotation:">&ndash;&nbsp;mapView:viewForAnnotation:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+	<a name="//api/name/setUpLocationManager:" title="setUpLocationManager:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUpLocationManager:">&ndash;&nbsp;setUpLocationManager:</a></code>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -110,38 +113,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>协议方法,用于大头针视图的创建</p>
+				<p>初始化beacon点位信息</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (JCAnnotationView *)mapView:(JCMapView *)<em>mapView</em> viewForAnnotation:(JCAnnotation *)<em>annotation</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setUpLocationManager:(JCLocationManager *)<em>manager</em></code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联的地图</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>annotation</code></th>
-						<td><p>大头针</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>大头针视图</p>
-			</div>
 			
 
 			
@@ -149,7 +130,9 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>协议方法,用于大头针视图的创建</p>
+				<p>初始化beacon点位信息</p>
+
+<p>@param manager</p>
 			</div>
 			
 
@@ -160,7 +143,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCMapBuilding.h</code></p>
 			</div>
 			
 			

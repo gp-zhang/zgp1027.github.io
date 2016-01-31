@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCMapViewDelegate Protocol Reference</title>
+	<title>JCPointLayer Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,17 +52,19 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/mapView:hasChangedZoomLevel:">- mapView:hasChangedZoomLevel:</option>
+		<option value="//api/name/point">point</option>
 		
-		<option value="//api/name/mapView:tappedOnAnnotation:">- mapView:tappedOnAnnotation:</option>
+		<option value="//api/name/title">title</option>
+		
+		<option value="//api/name/type">type</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -77,16 +79,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCMapViewDelegate Protocol Reference</h1>
+					<h1 class="title">JCPointLayer Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Conforms to</th>
+	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCMapView.h</td>
+	<td>JCPointLayer.h<br />JCPointLayer.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -104,8 +106,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/mapView:tappedOnAnnotation:" title="mapView:tappedOnAnnotation:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:tappedOnAnnotation:">&ndash;&nbsp;mapView:tappedOnAnnotation:</a></code>
+	<a name="//api/name/point" title="point"></a>
+	<h3 class="method-title"><code><a href="#//api/name/point">&nbsp;&nbsp;point</a></code>
 </h3>
 
 	<div class="method-info">
@@ -115,31 +117,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>大头针点击事件</p>
+				<p>wc图层和stair图层的位置</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)mapView:(JCMapView *)<em>mapView</em> tappedOnAnnotation:(JCAnnotation *)<em>annotation</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint point</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联地图</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>annotation</code></th>
-						<td><p>被点击的大头针</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -149,7 +134,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>大头针点击事件</p>
+				<p>wc图层和stair图层的位置</p>
 			</div>
 			
 
@@ -160,15 +145,52 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapView.h</code></p>
+				<p><code class="declared-in-ref">JCPointLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapView:hasChangedZoomLevel:" title="mapView:hasChangedZoomLevel:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:hasChangedZoomLevel:">&ndash;&nbsp;mapView:hasChangedZoomLevel:</a></code>
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int type</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCPointLayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
 </h3>
 
 	<div class="method-info">
@@ -178,31 +200,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>缩放比例变化后</p>
+				<p>title</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)mapView:(JCMapView *)<em>mapView</em> hasChangedZoomLevel:(CGFloat)<em>level</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSString *title</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联地图</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>level</code></th>
-						<td><p>新的缩放比例</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -212,7 +217,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>缩放比例变化后</p>
+				<p>title</p>
 			</div>
 			
 
@@ -223,7 +228,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapView.h</code></p>
+				<p><code class="declared-in-ref">JCPointLayer.h</code></p>
 			</div>
 			
 			

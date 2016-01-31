@@ -56,6 +56,10 @@
 		
 		<option value="//api/name/dataObject">dataObject</option>
 		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/image">image</option>
+		
 		<option value="//api/name/mapView">mapView</option>
 		
 		<option value="//api/name/offset">offset</option>
@@ -63,6 +67,10 @@
 		<option value="//api/name/point">point</option>
 		
 		<option value="//api/name/shouldScaleWithSupper">shouldScaleWithSupper</option>
+		
+		<option value="//api/name/shouldShowCalloutView">shouldShowCalloutView</option>
+		
+		<option value="//api/name/title">title</option>
 		
 		<option value="//api/name/view">view</option>
 		
@@ -72,7 +80,7 @@
 	
 	<optgroup label="Class Methods">
 		
-		<option value="//api/name/annotationWithPoint:Delegate:">+ annotationWithPoint:Delegate:</option>
+		<option value="//api/name/annotationWithPoint:">+ annotationWithPoint:</option>
 		
 	</optgroup>
 	
@@ -201,6 +209,98 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>x=0时为左右居中、y请自行调整</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>标题</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *title</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>标题</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="method-title"><code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>大头针图标</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *image</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>大头针图标</p>
 			</div>
 			
 
@@ -367,7 +467,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数</p>
+				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数,默认NO</p>
 			</div>
 			
 		    
@@ -384,7 +484,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数</p>
+				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数,默认NO</p>
 			</div>
 			
 
@@ -402,8 +502,100 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/annotationWithPoint:Delegate:" title="annotationWithPoint:Delegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/annotationWithPoint:Delegate:">+&nbsp;annotationWithPoint:Delegate:</a></code>
+	<a name="//api/name/shouldShowCalloutView" title="shouldShowCalloutView"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldShowCalloutView">&nbsp;&nbsp;shouldShowCalloutView</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>气泡开关,默认YES</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldShowCalloutView</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>气泡开关,默认YES</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置代理，用于自定义大头针样式</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;JCAnnotationDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置代理，用于自定义大头针样式</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/annotationWithPoint:" title="annotationWithPoint:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/annotationWithPoint:">+&nbsp;annotationWithPoint:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -418,7 +610,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (id)annotationWithPoint:(CGPoint)<em>point</em> Delegate:(_Nonnull id&lt;JCAnnotationDelegate&gt;)<em>delegate</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (id)annotationWithPoint:(CGPoint)<em>point</em></code></div>
 
 		    
 			
@@ -574,7 +766,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-01-28</p>
+						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-01-31</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCMapViewDelegate Protocol Reference</title>
+	<title>JCMapLayer Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,17 +52,21 @@
 
 	
 	
-
-	
-
-	
-	<optgroup label="Instance Methods">
+	<optgroup label="Properties">
 		
-		<option value="//api/name/mapView:hasChangedZoomLevel:">- mapView:hasChangedZoomLevel:</option>
+		<option value="//api/name/azimuth">azimuth</option>
 		
-		<option value="//api/name/mapView:tappedOnAnnotation:">- mapView:tappedOnAnnotation:</option>
+		<option value="//api/name/image">image</option>
+		
+		<option value="//api/name/scalex">scalex</option>
+		
+		<option value="//api/name/scaley">scaley</option>
 		
 	</optgroup>
+	
+
+	
+
 	
 	
 </select>
@@ -77,16 +81,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCMapViewDelegate Protocol Reference</h1>
+					<h1 class="title">JCMapLayer Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Conforms to</th>
+	<th>Inherits from</th>
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCMapView.h</td>
+	<td>JCMapLayer.h<br />JCMapLayer.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -104,8 +108,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/mapView:tappedOnAnnotation:" title="mapView:tappedOnAnnotation:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:tappedOnAnnotation:">&ndash;&nbsp;mapView:tappedOnAnnotation:</a></code>
+	<a name="//api/name/image" title="image"></a>
+	<h3 class="method-title"><code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
 </h3>
 
 	<div class="method-info">
@@ -115,31 +119,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>大头针点击事件</p>
+				<p>地图图层图片</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)mapView:(JCMapView *)<em>mapView</em> tappedOnAnnotation:(JCAnnotation *)<em>annotation</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *image</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联地图</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>annotation</code></th>
-						<td><p>被点击的大头针</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -149,7 +136,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>大头针点击事件</p>
+				<p>地图图层图片</p>
 			</div>
 			
 
@@ -160,15 +147,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapView.h</code></p>
+				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapView:hasChangedZoomLevel:" title="mapView:hasChangedZoomLevel:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:hasChangedZoomLevel:">&ndash;&nbsp;mapView:hasChangedZoomLevel:</a></code>
+	<a name="//api/name/scalex" title="scalex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scalex">&nbsp;&nbsp;scalex</a></code>
 </h3>
 
 	<div class="method-info">
@@ -178,31 +165,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>缩放比例变化后</p>
+				<p>x轴比例</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)mapView:(JCMapView *)<em>mapView</em> hasChangedZoomLevel:(CGFloat)<em>level</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float scalex</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联地图</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>level</code></th>
-						<td><p>新的缩放比例</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -212,7 +182,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>缩放比例变化后</p>
+				<p>x轴比例</p>
 			</div>
 			
 
@@ -223,7 +193,99 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapView.h</code></p>
+				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/scaley" title="scaley"></a>
+	<h3 class="method-title"><code><a href="#//api/name/scaley">&nbsp;&nbsp;scaley</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>y轴比例</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float scaley</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>y轴比例</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/azimuth" title="azimuth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/azimuth">&nbsp;&nbsp;azimuth</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>地图方向与正北的夹角</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float azimuth</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>地图方向与正北的夹角</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
 			</div>
 			
 			

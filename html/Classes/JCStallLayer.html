@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCAnnotationCallOutView Class Reference</title>
+	<title>JCStallLayer Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,27 +54,25 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/annotation">annotation</option>
+		<option value="//api/name/color">color</option>
 		
-		<option value="//api/name/offset">offset</option>
+		<option value="//api/name/des">des</option>
 		
-		<option value="//api/name/showDefaultStyle">showDefaultStyle</option>
+		<option value="//api/name/path">path</option>
 		
-		<option value="//api/name/titleLabel">titleLabel</option>
+		<option value="//api/name/point">point</option>
+		
+		<option value="//api/name/size">size</option>
+		
+		<option value="//api/name/title">title</option>
+		
+		<option value="//api/name/type">type</option>
 		
 	</optgroup>
 	
 
 	
 
-	
-	<optgroup label="Instance Methods">
-		
-		<option value="//api/name/initOnMapView:">- initOnMapView:</option>
-		
-		<option value="//api/name/updatePosition">- updatePosition</option>
-		
-	</optgroup>
 	
 	
 </select>
@@ -89,16 +87,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCAnnotationCallOutView Class Reference</h1>
+					<h1 class="title">JCStallLayer Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>UIView</td>
+	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCAnnotationCallOutView.h<br />JCAnnotationCallOutView.m</td>
+	<td>JCStallLayer.h<br />JCStallLayer.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -116,8 +114,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/offset" title="offset"></a>
-	<h3 class="method-title"><code><a href="#//api/name/offset">&nbsp;&nbsp;offset</a></code>
+	<a name="//api/name/path" title="path"></a>
+	<h3 class="method-title"><code><a href="#//api/name/path">&nbsp;&nbsp;path</a></code>
 </h3>
 
 	<div class="method-info">
@@ -127,12 +125,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>x=0时为左右居中、y请自行调整</p>
+				<p>绘图的路径</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint offset</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBezierPath *path</code></div>
 
 		    
 			
@@ -144,7 +142,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>x=0时为左右居中、y请自行调整</p>
+				<p>绘图的路径</p>
 			</div>
 			
 
@@ -155,15 +153,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotationCallOutView.h</code></p>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initOnMapView:" title="initOnMapView:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initOnMapView:">&ndash;&nbsp;initOnMapView:</a></code>
+	<a name="//api/name/point" title="point"></a>
+	<h3 class="method-title"><code><a href="#//api/name/point">&nbsp;&nbsp;point</a></code>
 </h3>
 
 	<div class="method-info">
@@ -173,33 +171,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>初始化方法</p>
+				<p>stall图层的point</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (id)initOnMapView:(JCMapView *)<em>mapView</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint point</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联地图</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>气泡视图实例</p>
-			</div>
 			
 
 			
@@ -207,7 +188,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化方法</p>
+				<p>stall图层的point</p>
 			</div>
 			
 
@@ -218,15 +199,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotationCallOutView.h</code></p>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/updatePosition" title="updatePosition"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updatePosition">&ndash;&nbsp;updatePosition</a></code>
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
 </h3>
 
 	<div class="method-info">
@@ -236,12 +217,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>更新位置</p>
+				<p>stall图层的标题</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)updatePosition</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *title</code></div>
 
 		    
 			
@@ -253,7 +234,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>更新位置</p>
+				<p>stall图层的标题</p>
 			</div>
 			
 
@@ -264,15 +245,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotationCallOutView.h</code></p>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/annotation" title="annotation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/annotation">&nbsp;&nbsp;annotation</a></code>
+	<a name="//api/name/color" title="color"></a>
+	<h3 class="method-title"><code><a href="#//api/name/color">&nbsp;&nbsp;color</a></code>
 </h3>
 
 	<div class="method-info">
@@ -282,12 +263,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>当前关联的大头针</p>
+				<p>stall图层的颜色</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, strong) JCAnnotation *annotation</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIColor *color</code></div>
 
 		    
 			
@@ -299,7 +280,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>当前关联的大头针</p>
+				<p>stall图层的颜色</p>
 			</div>
 			
 
@@ -310,15 +291,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotationCallOutView.h</code></p>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/showDefaultStyle" title="showDefaultStyle"></a>
-	<h3 class="method-title"><code><a href="#//api/name/showDefaultStyle">&nbsp;&nbsp;showDefaultStyle</a></code>
+	<a name="//api/name/size" title="size"></a>
+	<h3 class="method-title"><code><a href="#//api/name/size">&nbsp;&nbsp;size</a></code>
 </h3>
 
 	<div class="method-info">
@@ -328,12 +309,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>是否显示默认气泡,默认为YES</p>
+				<p>stall图层的大小</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showDefaultStyle</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGSize size</code></div>
 
 		    
 			
@@ -345,7 +326,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>是否显示默认气泡,默认为YES</p>
+				<p>stall图层的大小</p>
 			</div>
 			
 
@@ -356,15 +337,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotationCallOutView.h</code></p>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/titleLabel" title="titleLabel"></a>
-	<h3 class="method-title"><code><a href="#//api/name/titleLabel">&nbsp;&nbsp;titleLabel</a></code>
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="method-title"><code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
 </h3>
 
 	<div class="method-info">
@@ -374,12 +355,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>当showDefaultStyle为YES,才会有titleLabel</p>
+				<p>备用</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) UILabel *titleLabel</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int type</code></div>
 
 		    
 			
@@ -391,7 +372,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>当showDefaultStyle为YES,才会有titleLabel</p>
+				<p>备用</p>
 			</div>
 			
 
@@ -402,7 +383,53 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotationCallOutView.h</code></p>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/des" title="des"></a>
+	<h3 class="method-title"><code><a href="#//api/name/des">&nbsp;&nbsp;des</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>stall的描述，暂时没有。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSString *des</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>stall的描述，暂时没有。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCStallLayer.h</code></p>
 			</div>
 			
 			
