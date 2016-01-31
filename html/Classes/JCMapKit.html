@@ -68,7 +68,7 @@
 		
 		<option value="//api/name/initWithBuilding:">- initWithBuilding:</option>
 		
-		<option value="//api/name/mapGetLayer:number:">- mapGetLayer:number:</option>
+		<option value="//api/name/mapGetLayer:Index:">- mapGetLayer:Index:</option>
 		
 		<option value="//api/name/setUpLocationManager">- setUpLocationManager</option>
 		
@@ -263,7 +263,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>number</code></th>
-						<td><p>索引</p></td>
+						<td><p>楼层编号</p></td>
 					</tr>
 				
 				</table>
@@ -295,8 +295,8 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapGetLayer:number:" title="mapGetLayer:number:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapGetLayer:number:">&ndash;&nbsp;mapGetLayer:number:</a></code>
+	<a name="//api/name/mapGetLayer:Index:" title="mapGetLayer:Index:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mapGetLayer:Index:">&ndash;&nbsp;mapGetLayer:Index:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -311,7 +311,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (id)mapGetLayer:(NSString *)<em>name</em> number:(int)<em>number</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (id)mapGetLayer:(NSString *)<em>name</em> Index:(int)<em>index</em></code></div>
 
 		    
 			
@@ -325,8 +325,8 @@
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>number</code></th>
-						<td><p>地图索引</p></td>
+						<th scope="row" class="argument-name"><code>Index</code></th>
+						<td><p>地图索引,按添加顺序依次增长,从0开始</p></td>
 					</tr>
 				
 				</table>
