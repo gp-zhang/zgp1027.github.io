@@ -66,9 +66,15 @@
 		
 		<option value="//api/name/addFloorPath:des:number:">- addFloorPath:des:number:</option>
 		
+		<option value="//api/name/getPathWithNodes:Index:">- getPathWithNodes:Index:</option>
+		
+		<option value="//api/name/getRoute:endPoint:startIndex:endIndex:">- getRoute:endPoint:startIndex:endIndex:</option>
+		
 		<option value="//api/name/initWithBuilding:">- initWithBuilding:</option>
 		
 		<option value="//api/name/mapGetLayer:Index:">- mapGetLayer:Index:</option>
+		
+		<option value="//api/name/setUPNaviManager">- setUPNaviManager</option>
 		
 		<option value="//api/name/setUpLocationManager">- setUpLocationManager</option>
 		
@@ -420,7 +426,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>开始定位</p>
+				<p>开始定位//定位返回为实际坐标，以米为单位，在地图中使用需要转换为像素单位</p>
 			</div>
 			
 		    
@@ -437,7 +443,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>开始定位</p>
+				<p>开始定位//定位返回为实际坐标，以米为单位，在地图中使用需要转换为像素单位</p>
 			</div>
 			
 
@@ -500,6 +506,198 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/setUPNaviManager" title="setUPNaviManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setUPNaviManager">&ndash;&nbsp;setUPNaviManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>初始化导航模块,使用导航功能前/所有地图加载完成后-》使用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setUPNaviManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>初始化导航模块,使用导航功能前/所有地图加载完成后-》使用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRoute:endPoint:startIndex:endIndex:" title="getRoute:endPoint:startIndex:endIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRoute:endPoint:startIndex:endIndex:">&ndash;&nbsp;getRoute:endPoint:startIndex:endIndex:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取路径节点(以像素为单位，mapView是像素为单位)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray *)getRoute:(CGPoint)<em>spoint</em> endPoint:(CGPoint)<em>ePoint</em> startIndex:(int)<em>sindex</em> endIndex:(int)<em>eindex</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>spoint</code></th>
+						<td><p>起始点坐标(像素)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ePoint</code></th>
+						<td><p>终点坐标(像素)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sindex</code></th>
+						<td><p>起始点地图索引 按添加顺序依次增长,从0开始</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>eindex</code></th>
+						<td><p>终点地图索引 按添加顺序依次增长,从0开始</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>节点数组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取路径节点(以像素为单位，mapView是像素为单位)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPathWithNodes:Index:" title="getPathWithNodes:Index:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPathWithNodes:Index:">&ndash;&nbsp;getPathWithNodes:Index:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过节点数组生成Path</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (UIBezierPath *)getPathWithNodes:(NSArray *)<em>nodes</em> Index:(int)<em>index</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nodes</code></th>
+						<td><p>节点数组</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>当前地图索引 按添加顺序依次增长,从0开始</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>返回UIBezierPath, JCMapView->setPath:(UIBezierPath <em>)path Options:(NSDictionary </em>)option;</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过节点数组生成Path</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapKit.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -513,7 +711,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-01-31</p>
+						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-02-01</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
