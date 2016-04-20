@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCAnnotation Class Reference</title>
+	<title>JCNavicStatus Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -56,45 +56,35 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/dataObject">dataObject</option>
+		<option value="//api/name/distprojection">distprojection</option>
 		
-		<option value="//api/name/delegate">delegate</option>
+		<option value="//api/name/disttarget">disttarget</option>
 		
-		<option value="//api/name/image">image</option>
+		<option value="//api/name/nextsegdirection">nextsegdirection</option>
 		
-		<option value="//api/name/mapView">mapView</option>
+		<option value="//api/name/projectionx">projectionx</option>
 		
-		<option value="//api/name/offset">offset</option>
+		<option value="//api/name/projectiony">projectiony</option>
 		
-		<option value="//api/name/point">point</option>
+		<option value="//api/name/segazimuth">segazimuth</option>
 		
-		<option value="//api/name/shouldScaleWithSupper">shouldScaleWithSupper</option>
+		<option value="//api/name/segindex">segindex</option>
 		
-		<option value="//api/name/shouldShowCalloutView">shouldShowCalloutView</option>
+		<option value="//api/name/suggestion">suggestion</option>
 		
-		<option value="//api/name/title">title</option>
+		<option value="//api/name/targetazimuth">targetazimuth</option>
 		
-		<option value="//api/name/view">view</option>
+		<option value="//api/name/targetx">targetx</option>
 		
-	</optgroup>
-	
-
-	
-	<optgroup label="Class Methods">
+		<option value="//api/name/targety">targety</option>
 		
-		<option value="//api/name/annotationWithPoint:">+ annotationWithPoint:</option>
+		<option value="//api/name/validate">validate</option>
 		
 	</optgroup>
 	
 
 	
-	<optgroup label="Instance Methods">
-		
-		<option value="//api/name/removeFromMapView">- removeFromMapView</option>
-		
-		<option value="//api/name/updatePosition">- updatePosition</option>
-		
-	</optgroup>
+
 	
 	
 </select>
@@ -109,7 +99,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCAnnotation Class Reference</h1>
+					<h1 class="title">JCNavicStatus Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -118,7 +108,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCAnnotation.h</td>
+	<td>JCNavicStatus.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -128,7 +118,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>大头针</p>
+						<p>返回当前位置相对于导航链的状态</p>
 					</div>
 					
 					
@@ -144,8 +134,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/point" title="point"></a>
-	<h3 class="method-title"><code><a href="#//api/name/point">&nbsp;&nbsp;point</a></code>
+	<a name="//api/name/projectionx" title="projectionx"></a>
+	<h3 class="method-title"><code><a href="#//api/name/projectionx">&nbsp;&nbsp;projectionx</a></code>
 </h3>
 
 	<div class="method-info">
@@ -155,12 +145,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>位置坐标</p>
+				<p>投影坐标x</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint point</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double projectionx</code></div>
 
 		    
 			
@@ -172,7 +162,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>位置坐标</p>
+				<p>投影坐标x</p>
 			</div>
 			
 
@@ -183,15 +173,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/offset" title="offset"></a>
-	<h3 class="method-title"><code><a href="#//api/name/offset">&nbsp;&nbsp;offset</a></code>
+	<a name="//api/name/projectiony" title="projectiony"></a>
+	<h3 class="method-title"><code><a href="#//api/name/projectiony">&nbsp;&nbsp;projectiony</a></code>
 </h3>
 
 	<div class="method-info">
@@ -201,12 +191,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>x=0时为左右居中、y请自行调整</p>
+				<p>投影坐标y</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint offset</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double projectiony</code></div>
 
 		    
 			
@@ -218,7 +208,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>x=0时为左右居中、y请自行调整</p>
+				<p>投影坐标y</p>
 			</div>
 			
 
@@ -229,15 +219,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/title" title="title"></a>
-	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+	<a name="//api/name/targetx" title="targetx"></a>
+	<h3 class="method-title"><code><a href="#//api/name/targetx">&nbsp;&nbsp;targetx</a></code>
 </h3>
 
 	<div class="method-info">
@@ -247,12 +237,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>标题</p>
+				<p>拐点坐标x</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *title</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double targetx</code></div>
 
 		    
 			
@@ -264,7 +254,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>标题</p>
+				<p>拐点坐标x</p>
 			</div>
 			
 
@@ -275,15 +265,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/image" title="image"></a>
-	<h3 class="method-title"><code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
+	<a name="//api/name/targety" title="targety"></a>
+	<h3 class="method-title"><code><a href="#//api/name/targety">&nbsp;&nbsp;targety</a></code>
 </h3>
 
 	<div class="method-info">
@@ -293,12 +283,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>大头针图标</p>
+				<p>拐点坐标y</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *image</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double targety</code></div>
 
 		    
 			
@@ -310,7 +300,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>大头针图标</p>
+				<p>拐点坐标y</p>
 			</div>
 			
 
@@ -321,15 +311,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/dataObject" title="dataObject"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dataObject">&nbsp;&nbsp;dataObject</a></code>
+	<a name="//api/name/distprojection" title="distprojection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distprojection">&nbsp;&nbsp;distprojection</a></code>
 </h3>
 
 	<div class="method-info">
@@ -339,12 +329,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>关联的外部数据</p>
+				<p>当前位置到投影坐标的距离</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id dataObject</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double distprojection</code></div>
 
 		    
 			
@@ -356,7 +346,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>关联的外部数据</p>
+				<p>当前位置到投影坐标的距离</p>
 			</div>
 			
 
@@ -367,15 +357,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/view" title="view"></a>
-	<h3 class="method-title"><code><a href="#//api/name/view">&nbsp;&nbsp;view</a></code>
+	<a name="//api/name/disttarget" title="disttarget"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disttarget">&nbsp;&nbsp;disttarget</a></code>
 </h3>
 
 	<div class="method-info">
@@ -385,12 +375,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>大头针视图</p>
+				<p>位置到目标端点的距离</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) JCAnnotationView *view</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double disttarget</code></div>
 
 		    
 			
@@ -402,7 +392,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>大头针视图</p>
+				<p>位置到目标端点的距离</p>
 			</div>
 			
 
@@ -413,15 +403,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapView" title="mapView"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView">&nbsp;&nbsp;mapView</a></code>
+	<a name="//api/name/segazimuth" title="segazimuth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/segazimuth">&nbsp;&nbsp;segazimuth</a></code>
 </h3>
 
 	<div class="method-info">
@@ -431,12 +421,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>关联的地图</p>
+				<p>段方向角</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, weak) JCMapView *mapView</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double segazimuth</code></div>
 
 		    
 			
@@ -448,7 +438,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>关联的地图</p>
+				<p>段方向角</p>
 			</div>
 			
 
@@ -459,15 +449,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/shouldScaleWithSupper" title="shouldScaleWithSupper"></a>
-	<h3 class="method-title"><code><a href="#//api/name/shouldScaleWithSupper">&nbsp;&nbsp;shouldScaleWithSupper</a></code>
+	<a name="//api/name/targetazimuth" title="targetazimuth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/targetazimuth">&nbsp;&nbsp;targetazimuth</a></code>
 </h3>
 
 	<div class="method-info">
@@ -477,12 +467,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数,默认NO</p>
+				<p>位置到目标端点的方位角</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldScaleWithSupper</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) double targetazimuth</code></div>
 
 		    
 			
@@ -494,7 +484,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数,默认NO</p>
+				<p>位置到目标端点的方位角</p>
 			</div>
 			
 
@@ -505,15 +495,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/shouldShowCalloutView" title="shouldShowCalloutView"></a>
-	<h3 class="method-title"><code><a href="#//api/name/shouldShowCalloutView">&nbsp;&nbsp;shouldShowCalloutView</a></code>
+	<a name="//api/name/segindex" title="segindex"></a>
+	<h3 class="method-title"><code><a href="#//api/name/segindex">&nbsp;&nbsp;segindex</a></code>
 </h3>
 
 	<div class="method-info">
@@ -523,12 +513,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>气泡开关,默认YES</p>
+				<p>段的索引</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldShowCalloutView</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int segindex</code></div>
 
 		    
 			
@@ -540,7 +530,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>气泡开关,默认YES</p>
+				<p>段的索引</p>
 			</div>
 			
 
@@ -551,15 +541,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	<a name="//api/name/suggestion" title="suggestion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/suggestion">&nbsp;&nbsp;suggestion</a></code>
 </h3>
 
 	<div class="method-info">
@@ -569,12 +559,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>设置代理，用于自定义大头针样式</p>
+				<p>对下一步移动的建议,作为索引取数组中的文本:@[@&ldquo;前行&rdquo;,@&ldquo;左前行&rdquo;,@&ldquo;向左行&rdquo;,@&ldquo;后转调头&rdquo;,@&ldquo;后转调头&rdquo;,@&ldquo;后转调头&rdquo;,@&ldquo;向右行&rdquo;,@&ldquo;右前行&rdquo;]</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;JCAnnotationDelegate&gt; delegate</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int suggestion</code></div>
 
 		    
 			
@@ -586,7 +576,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>设置代理，用于自定义大头针样式</p>
+				<p>对下一步移动的建议,作为索引取数组中的文本:@[@&ldquo;前行&rdquo;,@&ldquo;左前行&rdquo;,@&ldquo;向左行&rdquo;,@&ldquo;后转调头&rdquo;,@&ldquo;后转调头&rdquo;,@&ldquo;后转调头&rdquo;,@&ldquo;向右行&rdquo;,@&ldquo;右前行&rdquo;]</p>
 			</div>
 			
 
@@ -597,15 +587,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/annotationWithPoint:" title="annotationWithPoint:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/annotationWithPoint:">+&nbsp;annotationWithPoint:</a></code>
+	<a name="//api/name/nextsegdirection" title="nextsegdirection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/nextsegdirection">&nbsp;&nbsp;nextsegdirection</a></code>
 </h3>
 
 	<div class="method-info">
@@ -615,33 +605,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>初始化</p>
+				<p>到达目标端点后的建议,作为索引取数组中的文本:@[@&ldquo;左转&rdquo;,@&ldquo;右转&rdquo;,@&ldquo;到达&rdquo;]</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>+ (id)annotationWithPoint:(CGPoint)<em>point</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int nextsegdirection</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>point</code></th>
-						<td><p>大头针位置坐标</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>大头针实例</p>
-			</div>
 			
 
 			
@@ -649,7 +622,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化</p>
+				<p>到达目标端点后的建议,作为索引取数组中的文本:@[@&ldquo;左转&rdquo;,@&ldquo;右转&rdquo;,@&ldquo;到达&rdquo;]</p>
 			</div>
 			
 
@@ -660,15 +633,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/removeFromMapView" title="removeFromMapView"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeFromMapView">&ndash;&nbsp;removeFromMapView</a></code>
+	<a name="//api/name/validate" title="validate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/validate">&nbsp;&nbsp;validate</a></code>
 </h3>
 
 	<div class="method-info">
@@ -678,12 +651,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>移除大头针视图</p>
+				<p>本结果是否有效</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)removeFromMapView</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int validate</code></div>
 
 		    
 			
@@ -695,7 +668,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>移除大头针视图</p>
+				<p>本结果是否有效</p>
 			</div>
 			
 
@@ -706,53 +679,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/updatePosition" title="updatePosition"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updatePosition">&ndash;&nbsp;updatePosition</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>更新位置</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)updatePosition</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>更新位置</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCNavicStatus.h</code></p>
 			</div>
 			
 			

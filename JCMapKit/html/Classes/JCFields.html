@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCMapLayer Class Reference</title>
+	<title>JCFields Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,23 +52,17 @@
 
 	
 	
-	<optgroup label="Properties">
-		
-		<option value="//api/name/layer">layer</option>
-		
-	</optgroup>
-	
 
 	
 
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/drawContext:left:top:right:bottom:">- drawContext:left:top:right:bottom:</option>
+		<option value="//api/name/getFieldByIndex:">- getFieldByIndex:</option>
 		
-		<option value="//api/name/getName">- getName</option>
+		<option value="//api/name/getFieldByName:">- getFieldByName:</option>
 		
-		<option value="//api/name/initWithLayer:">- initWithLayer:</option>
+		<option value="//api/name/getSize">- getSize</option>
 		
 	</optgroup>
 	
@@ -85,16 +79,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCMapLayer Class Reference</h1>
+					<h1 class="title">JCFields Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>NSObject</td>
+	<td>JCObject : NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCMapLayer.h</td>
+	<td>JCFields.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -112,8 +106,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/layer" title="layer"></a>
-	<h3 class="method-title"><code><a href="#//api/name/layer">&nbsp;&nbsp;layer</a></code>
+	<a name="//api/name/getSize" title="getSize"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSize">&ndash;&nbsp;getSize</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,16 +117,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>图层</p>
+				<p>属性域表长度</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JCLayer *layer</code></div>
+			<div class="method-subsection method-declaration"><code>- (int)getSize</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>属性域表长度</p>
+			</div>
 			
 
 			
@@ -140,7 +139,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>图层</p>
+				<p>属性域表长度</p>
 			</div>
 			
 
@@ -151,15 +150,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCFields.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initWithLayer:" title="initWithLayer:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithLayer:">&ndash;&nbsp;initWithLayer:</a></code>
+	<a name="//api/name/getFieldByIndex:" title="getFieldByIndex:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFieldByIndex:">&ndash;&nbsp;getFieldByIndex:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -169,12 +168,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>初始化mapLayer</p>
+				<p>按索引获取属性域</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithLayer:(JCLayer *)<em>layer</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (JCField *)getFieldByIndex:(int)<em>index</em></code></div>
 
 		    
 			
@@ -183,8 +182,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>layer</code></th>
-						<td><p>图层</p></td>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>索引</p></td>
 					</tr>
 				
 				</table>
@@ -194,7 +193,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>JCMapLayer</p>
+				<p><a href="../Classes/JCField.html">JCField</a></p>
 			</div>
 			
 
@@ -203,7 +202,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化mapLayer</p>
+				<p>按索引获取属性域</p>
 			</div>
 			
 
@@ -214,15 +213,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCFields.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getName" title="getName"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getName">&ndash;&nbsp;getName</a></code>
+	<a name="//api/name/getFieldByName:" title="getFieldByName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFieldByName:">&ndash;&nbsp;getFieldByName:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -232,63 +231,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取图层名称</p>
+				<p>根据名称获取属性域</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSString *)getName</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>名称</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取图层名称</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/drawContext:left:top:right:bottom:" title="drawContext:left:top:right:bottom:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/drawContext:left:top:right:bottom:">&ndash;&nbsp;drawContext:left:top:right:bottom:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>绘制方法,</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)drawContext:(CGContextRef)<em>context</em> left:(float)<em>left</em> top:(float)<em>top</em> right:(float)<em>right</em> bottom:(float)<em>bottom</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (JCField *)getFieldByName:(NSString *)<em>name</em></code></div>
 
 		    
 			
@@ -297,28 +245,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>context</code></th>
-						<td><p>上下文</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>left</code></th>
-						<td><p>左x</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>top</code></th>
-						<td><p>上y</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>right</code></th>
-						<td><p>右x</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>bottom</code></th>
-						<td><p>下y</p></td>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>名称</p></td>
 					</tr>
 				
 				</table>
@@ -326,13 +254,18 @@
 			
 
 			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/JCField.html">JCField</a></p>
+			</div>
+			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>绘制方法,</p>
+				<p>根据名称获取属性域</p>
 			</div>
 			
 
@@ -343,7 +276,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCFields.h</code></p>
 			</div>
 			
 			

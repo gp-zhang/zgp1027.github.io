@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCAnnotation Class Reference</title>
+	<title>JCEnvelop Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,45 +54,33 @@
 
 	
 	
-	<optgroup label="Properties">
-		
-		<option value="//api/name/dataObject">dataObject</option>
-		
-		<option value="//api/name/delegate">delegate</option>
-		
-		<option value="//api/name/image">image</option>
-		
-		<option value="//api/name/mapView">mapView</option>
-		
-		<option value="//api/name/offset">offset</option>
-		
-		<option value="//api/name/point">point</option>
-		
-		<option value="//api/name/shouldScaleWithSupper">shouldScaleWithSupper</option>
-		
-		<option value="//api/name/shouldShowCalloutView">shouldShowCalloutView</option>
-		
-		<option value="//api/name/title">title</option>
-		
-		<option value="//api/name/view">view</option>
-		
-	</optgroup>
-	
 
-	
-	<optgroup label="Class Methods">
-		
-		<option value="//api/name/annotationWithPoint:">+ annotationWithPoint:</option>
-		
-	</optgroup>
 	
 
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/removeFromMapView">- removeFromMapView</option>
+		<option value="//api/name/containExtent:">- containExtent:</option>
 		
-		<option value="//api/name/updatePosition">- updatePosition</option>
+		<option value="//api/name/containPointx:y:">- containPointx:y:</option>
+		
+		<option value="//api/name/distanceSq:">- distanceSq:</option>
+		
+		<option value="//api/name/getBottom">- getBottom</option>
+		
+		<option value="//api/name/getCenterX">- getCenterX</option>
+		
+		<option value="//api/name/getCenterY">- getCenterY</option>
+		
+		<option value="//api/name/getLeft">- getLeft</option>
+		
+		<option value="//api/name/getRight">- getRight</option>
+		
+		<option value="//api/name/getTop">- getTop</option>
+		
+		<option value="//api/name/intersect:top:right:bottom:">- intersect:top:right:bottom:</option>
+		
+		<option value="//api/name/intersectExtent:">- intersectExtent:</option>
 		
 	</optgroup>
 	
@@ -109,16 +97,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCAnnotation Class Reference</h1>
+					<h1 class="title">JCEnvelop Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>NSObject</td>
+	<td>JCObject : NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCAnnotation.h</td>
+	<td>JCEnvelop.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -128,7 +116,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>大头针</p>
+						<p>相当于一个外切矩形</p>
 					</div>
 					
 					
@@ -144,8 +132,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/point" title="point"></a>
-	<h3 class="method-title"><code><a href="#//api/name/point">&nbsp;&nbsp;point</a></code>
+	<a name="//api/name/getCenterX" title="getCenterX"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCenterX">&ndash;&nbsp;getCenterX</a></code>
 </h3>
 
 	<div class="method-info">
@@ -155,16 +143,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>位置坐标</p>
+				<p>获取中心点X坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint point</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getCenterX</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>x坐标</p>
+			</div>
 			
 
 			
@@ -172,7 +165,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>位置坐标</p>
+				<p>获取中心点X坐标</p>
 			</div>
 			
 
@@ -183,15 +176,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/offset" title="offset"></a>
-	<h3 class="method-title"><code><a href="#//api/name/offset">&nbsp;&nbsp;offset</a></code>
+	<a name="//api/name/getCenterY" title="getCenterY"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCenterY">&ndash;&nbsp;getCenterY</a></code>
 </h3>
 
 	<div class="method-info">
@@ -201,16 +194,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>x=0时为左右居中、y请自行调整</p>
+				<p>获取中心点Y坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint offset</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getCenterY</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>y坐标</p>
+			</div>
 			
 
 			
@@ -218,7 +216,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>x=0时为左右居中、y请自行调整</p>
+				<p>获取中心点Y坐标</p>
 			</div>
 			
 
@@ -229,15 +227,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/title" title="title"></a>
-	<h3 class="method-title"><code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+	<a name="//api/name/getLeft" title="getLeft"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLeft">&ndash;&nbsp;getLeft</a></code>
 </h3>
 
 	<div class="method-info">
@@ -247,16 +245,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>标题</p>
+				<p>获取左边x坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *title</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getLeft</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>左边x坐标</p>
+			</div>
 			
 
 			
@@ -264,7 +267,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>标题</p>
+				<p>获取左边x坐标</p>
 			</div>
 			
 
@@ -275,15 +278,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/image" title="image"></a>
-	<h3 class="method-title"><code><a href="#//api/name/image">&nbsp;&nbsp;image</a></code>
+	<a name="//api/name/getTop" title="getTop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTop">&ndash;&nbsp;getTop</a></code>
 </h3>
 
 	<div class="method-info">
@@ -293,16 +296,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>大头针图标</p>
+				<p>获取上边y坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIImage *image</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getTop</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>上边y坐标</p>
+			</div>
 			
 
 			
@@ -310,7 +318,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>大头针图标</p>
+				<p>获取上边y坐标</p>
 			</div>
 			
 
@@ -321,15 +329,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/dataObject" title="dataObject"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dataObject">&nbsp;&nbsp;dataObject</a></code>
+	<a name="//api/name/getRight" title="getRight"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRight">&ndash;&nbsp;getRight</a></code>
 </h3>
 
 	<div class="method-info">
@@ -339,16 +347,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>关联的外部数据</p>
+				<p>获取右边x坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id dataObject</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getRight</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>右边x坐标</p>
+			</div>
 			
 
 			
@@ -356,7 +369,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>关联的外部数据</p>
+				<p>获取右边x坐标</p>
 			</div>
 			
 
@@ -367,15 +380,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/view" title="view"></a>
-	<h3 class="method-title"><code><a href="#//api/name/view">&nbsp;&nbsp;view</a></code>
+	<a name="//api/name/getBottom" title="getBottom"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBottom">&ndash;&nbsp;getBottom</a></code>
 </h3>
 
 	<div class="method-info">
@@ -385,16 +398,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>大头针视图</p>
+				<p>获取下边y坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) JCAnnotationView *view</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getBottom</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>下边y坐标</p>
+			</div>
 			
 
 			
@@ -402,7 +420,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>大头针视图</p>
+				<p>获取下边y坐标</p>
 			</div>
 			
 
@@ -413,15 +431,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/mapView" title="mapView"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView">&nbsp;&nbsp;mapView</a></code>
+	<a name="//api/name/containPointx:y:" title="containPointx:y:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/containPointx:y:">&ndash;&nbsp;containPointx:y:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -431,196 +449,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>关联的地图</p>
+				<p>当前局域是否包含坐标</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, weak) JCMapView *mapView</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>关联的地图</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/shouldScaleWithSupper" title="shouldScaleWithSupper"></a>
-	<h3 class="method-title"><code><a href="#//api/name/shouldScaleWithSupper">&nbsp;&nbsp;shouldScaleWithSupper</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数,默认NO</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldScaleWithSupper</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>是否根据Map大小动态调整大头针的大小及位置、区域型大头针需要设置此参数,默认NO</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/shouldShowCalloutView" title="shouldShowCalloutView"></a>
-	<h3 class="method-title"><code><a href="#//api/name/shouldShowCalloutView">&nbsp;&nbsp;shouldShowCalloutView</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>气泡开关,默认YES</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL shouldShowCalloutView</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>气泡开关,默认YES</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/delegate" title="delegate"></a>
-	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>设置代理，用于自定义大头针样式</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;JCAnnotationDelegate&gt; delegate</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>设置代理，用于自定义大头针样式</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/annotationWithPoint:" title="annotationWithPoint:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/annotationWithPoint:">+&nbsp;annotationWithPoint:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>初始化</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>+ (id)annotationWithPoint:(CGPoint)<em>point</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)containPointx:(double)<em>x</em> y:(double)<em>y</em></code></div>
 
 		    
 			
@@ -629,8 +463,268 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>point</code></th>
-						<td><p>大头针位置坐标</p></td>
+						<th scope="row" class="argument-name"><code>x</code></th>
+						<td><p>x坐标</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>y</code></th>
+						<td><p>y坐标</p>
+
+<p>@return</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>当前局域是否包含坐标</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/containExtent:" title="containExtent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/containExtent:">&ndash;&nbsp;containExtent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否包含矩形</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)containExtent:(JCEnvelop *)<em>target</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>JCEnvelop对象</p>
+
+<p>@return</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否包含矩形</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/intersect:top:right:bottom:" title="intersect:top:right:bottom:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/intersect:top:right:bottom:">&ndash;&nbsp;intersect:top:right:bottom:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否与其他矩形相交</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)intersect:(double)<em>left</em> top:(double)<em>top</em> right:(double)<em>right</em> bottom:(double)<em>bottom</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>left</code></th>
+						<td><p>左x</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>top</code></th>
+						<td><p>上y</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>right</code></th>
+						<td><p>右x</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bottom</code></th>
+						<td><p>下y</p>
+
+<p>@return</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否与其他矩形相交</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/intersectExtent:" title="intersectExtent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/intersectExtent:">&ndash;&nbsp;intersectExtent:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否与其他矩形相交</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)intersectExtent:(JCEnvelop *)<em>target</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>JCEnvelop对象</p>
+
+<p>@return</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>是否与其他矩形相交</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/distanceSq:" title="distanceSq:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distanceSq:">&ndash;&nbsp;distanceSq:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>与其他矩形的距离</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (double)distanceSq:(JCEnvelop *)<em>target</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>target</code></th>
+						<td><p>JCEnvelop对象</p></td>
 					</tr>
 				
 				</table>
@@ -640,7 +734,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>大头针实例</p>
+				<p>距离</p>
 			</div>
 			
 
@@ -649,7 +743,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化</p>
+				<p>与其他矩形的距离</p>
 			</div>
 			
 
@@ -660,99 +754,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/removeFromMapView" title="removeFromMapView"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeFromMapView">&ndash;&nbsp;removeFromMapView</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>移除大头针视图</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)removeFromMapView</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>移除大头针视图</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/updatePosition" title="updatePosition"></a>
-	<h3 class="method-title"><code><a href="#//api/name/updatePosition">&ndash;&nbsp;updatePosition</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>更新位置</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)updatePosition</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>更新位置</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCEnvelop.h</code></p>
 			</div>
 			
 			

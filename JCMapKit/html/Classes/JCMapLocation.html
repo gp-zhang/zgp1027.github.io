@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCAnnotationDelegate Protocol Reference</title>
+	<title>JCMapLocation Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -58,7 +58,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/mapView:viewForAnnotation:">- mapView:viewForAnnotation:</option>
+		<option value="//api/name/initWithFloor:X:Y:">- initWithFloor:X:Y:</option>
 		
 	</optgroup>
 	
@@ -75,13 +75,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCAnnotationDelegate Protocol Reference</h1>
+					<h1 class="title">JCMapLocation Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>JCAnnotation.h</td>
+	<td>JCMapLocation.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,9 +102,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/mapView:viewForAnnotation:" title="mapView:viewForAnnotation:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:viewForAnnotation:">&ndash;&nbsp;mapView:viewForAnnotation:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+	<a name="//api/name/initWithFloor:X:Y:" title="initWithFloor:X:Y:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFloor:X:Y:">&ndash;&nbsp;initWithFloor:X:Y:</a></code>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -110,12 +113,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>协议方法,用于大头针视图的创建</p>
+				<p>使用楼层索引及坐标值初始化</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (JCAnnotationView *)mapView:(JCMapView *)<em>mapView</em> viewForAnnotation:(JCAnnotation *)<em>annotation</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithFloor:(int)<em>floorindex</em> X:(float)<em>x</em> Y:(float)<em>y</em></code></div>
 
 		    
 			
@@ -124,13 +127,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联的地图</p></td>
+						<th scope="row" class="argument-name"><code>floorindex</code></th>
+						<td><p>楼层索引</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>annotation</code></th>
-						<td><p>大头针</p></td>
+						<th scope="row" class="argument-name"><code>x</code></th>
+						<td><p>x坐标</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>y</code></th>
+						<td><p>y坐标</p></td>
 					</tr>
 				
 				</table>
@@ -140,7 +148,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>大头针视图</p>
+				<p>JCMapLocation</p>
 			</div>
 			
 
@@ -149,7 +157,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>协议方法,用于大头针视图的创建</p>
+				<p>使用楼层索引及坐标值初始化</p>
 			</div>
 			
 
@@ -160,7 +168,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCMapLocation.h</code></p>
 			</div>
 			
 			

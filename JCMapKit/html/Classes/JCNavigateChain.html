@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCMapLayer Class Reference</title>
+	<title>JCNavigateChain Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -52,23 +52,19 @@
 
 	
 	
-	<optgroup label="Properties">
-		
-		<option value="//api/name/layer">layer</option>
-		
-	</optgroup>
-	
 
 	
 
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/drawContext:left:top:right:bottom:">- drawContext:left:top:right:bottom:</option>
+		<option value="//api/name/getAzimuth">- getAzimuth</option>
 		
-		<option value="//api/name/getName">- getName</option>
+		<option value="//api/name/getSeg:">- getSeg:</option>
 		
-		<option value="//api/name/initWithLayer:">- initWithLayer:</option>
+		<option value="//api/name/getSegCount">- getSegCount</option>
+		
+		<option value="//api/name/getStatus:azimuth:">- getStatus:azimuth:</option>
 		
 	</optgroup>
 	
@@ -85,16 +81,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCMapLayer Class Reference</h1>
+					<h1 class="title">JCNavigateChain Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Inherits from</th>
-	<td>NSObject</td>
+	<td>JCObject : NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCMapLayer.h</td>
+	<td>JCNavigateChain.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -112,8 +108,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/layer" title="layer"></a>
-	<h3 class="method-title"><code><a href="#//api/name/layer">&nbsp;&nbsp;layer</a></code>
+	<a name="//api/name/getSegCount" title="getSegCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSegCount">&ndash;&nbsp;getSegCount</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,16 +119,21 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>图层</p>
+				<p>获取段的数量</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JCLayer *layer</code></div>
+			<div class="method-subsection method-declaration"><code>- (int)getSegCount</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>数量</p>
+			</div>
 			
 
 			
@@ -140,7 +141,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>图层</p>
+				<p>获取段的数量</p>
 			</div>
 			
 
@@ -151,15 +152,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCNavigateChain.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initWithLayer:" title="initWithLayer:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithLayer:">&ndash;&nbsp;initWithLayer:</a></code>
+	<a name="//api/name/getSeg:" title="getSeg:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSeg:">&ndash;&nbsp;getSeg:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -169,12 +170,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>初始化mapLayer</p>
+				<p>根据索引获取段</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithLayer:(JCLayer *)<em>layer</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (JCNavicSeg *)getSeg:(int)<em>index</em></code></div>
 
 		    
 			
@@ -183,8 +184,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>layer</code></th>
-						<td><p>图层</p></td>
+						<th scope="row" class="argument-name"><code>index</code></th>
+						<td><p>索引值</p></td>
 					</tr>
 				
 				</table>
@@ -194,7 +195,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>JCMapLayer</p>
+				<p><a href="../Classes/JCNavicSeg.html">JCNavicSeg</a></p>
 			</div>
 			
 
@@ -203,7 +204,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化mapLayer</p>
+				<p>根据索引获取段</p>
 			</div>
 			
 
@@ -214,15 +215,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCNavigateChain.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getName" title="getName"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getName">&ndash;&nbsp;getName</a></code>
+	<a name="//api/name/getAzimuth" title="getAzimuth"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAzimuth">&ndash;&nbsp;getAzimuth</a></code>
 </h3>
 
 	<div class="method-info">
@@ -232,12 +233,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取图层名称</p>
+				<p>获取方位角</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSString *)getName</code></div>
+			<div class="method-subsection method-declaration"><code>- (double)getAzimuth</code></div>
 
 		    
 			
@@ -245,7 +246,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>名称</p>
+				<p>方位角</p>
 			</div>
 			
 
@@ -254,7 +255,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取图层名称</p>
+				<p>获取方位角</p>
 			</div>
 			
 
@@ -265,15 +266,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCNavigateChain.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/drawContext:left:top:right:bottom:" title="drawContext:left:top:right:bottom:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/drawContext:left:top:right:bottom:">&ndash;&nbsp;drawContext:left:top:right:bottom:</a></code>
+	<a name="//api/name/getStatus:azimuth:" title="getStatus:azimuth:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStatus:azimuth:">&ndash;&nbsp;getStatus:azimuth:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -283,12 +284,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>绘制方法,</p>
+				<p>根据位置和方位角获取状态信息</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)drawContext:(CGContextRef)<em>context</em> left:(float)<em>left</em> top:(float)<em>top</em> right:(float)<em>right</em> bottom:(float)<em>bottom</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (JCNavicStatus *)getStatus:(JCMapLocation *)<em>loc</em> azimuth:(double)<em>azimuth</em></code></div>
 
 		    
 			
@@ -297,28 +298,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>context</code></th>
-						<td><p>上下文</p></td>
+						<th scope="row" class="argument-name"><code>loc</code></th>
+						<td><p>位置</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>left</code></th>
-						<td><p>左x</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>top</code></th>
-						<td><p>上y</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>right</code></th>
-						<td><p>右x</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>bottom</code></th>
-						<td><p>下y</p></td>
+						<th scope="row" class="argument-name"><code>azimuth</code></th>
+						<td><p>方位角</p></td>
 					</tr>
 				
 				</table>
@@ -326,13 +312,18 @@
 			
 
 			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/JCNavicStatus.html">JCNavicStatus</a></p>
+			</div>
+			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>绘制方法,</p>
+				<p>根据位置和方位角获取状态信息</p>
 			</div>
 			
 
@@ -343,7 +334,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCNavigateChain.h</code></p>
 			</div>
 			
 			

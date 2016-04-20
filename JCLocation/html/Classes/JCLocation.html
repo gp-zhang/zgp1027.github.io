@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCAnnotationDelegate Protocol Reference</title>
+	<title>JCLocation Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">JCMapKit </a>
+				<a href="../index.html">JCLocation </a>
 			</h1>
 
 			<p id="developer-home">
@@ -58,7 +58,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/mapView:viewForAnnotation:">- mapView:viewForAnnotation:</option>
+		<option value="//api/name/setRelocationStep:">- setRelocationStep:</option>
+		
+		<option value="//api/name/setThreshold:">- setThreshold:</option>
 		
 	</optgroup>
 	
@@ -75,13 +77,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCAnnotationDelegate Protocol Reference</h1>
+					<h1 class="title">JCLocation Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
 	<th>Declared in</th>
-	<td>JCAnnotation.h</td>
+	<td>JCLocation.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,9 +104,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/mapView:viewForAnnotation:" title="mapView:viewForAnnotation:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/mapView:viewForAnnotation:">&ndash;&nbsp;mapView:viewForAnnotation:</a></code>
-<span class="task-item-suffix">required method</span></h3>
+	<a name="//api/name/setThreshold:" title="setThreshold:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setThreshold:">&ndash;&nbsp;setThreshold:</a></code>
+</h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -110,12 +115,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>协议方法,用于大头针视图的创建</p>
+				<p>设置加速度阈值，xyz轴的加速度如果大于该值，则计一步，不设置取默认值1.2</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (JCAnnotationView *)mapView:(JCMapView *)<em>mapView</em> viewForAnnotation:(JCAnnotation *)<em>annotation</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)setThreshold:(float)<em>ts</em></code></div>
 
 		    
 			
@@ -124,13 +129,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>mapView</code></th>
-						<td><p>关联的地图</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>annotation</code></th>
-						<td><p>大头针</p></td>
+						<th scope="row" class="argument-name"><code>ts</code></th>
+						<td><p>加速度阈值</p></td>
 					</tr>
 				
 				</table>
@@ -138,18 +138,13 @@
 			
 
 			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>大头针视图</p>
-			</div>
-			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>协议方法,用于大头针视图的创建</p>
+				<p>设置加速度阈值，xyz轴的加速度如果大于该值，则计一步，不设置取默认值1.2</p>
 			</div>
 			
 
@@ -160,7 +155,65 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCAnnotation.h</code></p>
+				<p><code class="declared-in-ref">JCLocation.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setRelocationStep:" title="setRelocationStep:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setRelocationStep:">&ndash;&nbsp;setRelocationStep:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置自动重新定位的步数，默认为2</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setRelocationStep:(int)<em>step</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>step</code></th>
+						<td><p>步数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置自动重新定位的步数，默认为2</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCLocation.h</code></p>
 			</div>
 			
 			

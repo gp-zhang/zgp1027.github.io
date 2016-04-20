@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>JCMapLayer Class Reference</title>
+	<title>JCLockerDevice Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">JCMapKit </a>
+				<a href="../index.html">JCLockerManager </a>
 			</h1>
 
 			<p id="developer-home">
@@ -54,23 +54,19 @@
 	
 	<optgroup label="Properties">
 		
-		<option value="//api/name/layer">layer</option>
+		<option value="//api/name/bettery">bettery</option>
+		
+		<option value="//api/name/identifier">identifier</option>
+		
+		<option value="//api/name/rssi">rssi</option>
+		
+		<option value="//api/name/temperature">temperature</option>
 		
 	</optgroup>
 	
 
 	
 
-	
-	<optgroup label="Instance Methods">
-		
-		<option value="//api/name/drawContext:left:top:right:bottom:">- drawContext:left:top:right:bottom:</option>
-		
-		<option value="//api/name/getName">- getName</option>
-		
-		<option value="//api/name/initWithLayer:">- initWithLayer:</option>
-		
-	</optgroup>
 	
 	
 </select>
@@ -85,7 +81,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">JCMapLayer Class Reference</h1>
+					<h1 class="title">JCLockerDevice Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -94,7 +90,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCMapLayer.h</td>
+	<td>JCLockerManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -112,8 +108,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/layer" title="layer"></a>
-	<h3 class="method-title"><code><a href="#//api/name/layer">&nbsp;&nbsp;layer</a></code>
+	<a name="//api/name/identifier" title="identifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/identifier">&nbsp;&nbsp;identifier</a></code>
 </h3>
 
 	<div class="method-info">
@@ -123,12 +119,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>图层</p>
+				<p>设备id</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) JCLayer *layer</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *identifier</code></div>
 
 		    
 			
@@ -140,7 +136,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>图层</p>
+				<p>设备id</p>
 			</div>
 			
 
@@ -151,15 +147,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCLockerManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/initWithLayer:" title="initWithLayer:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithLayer:">&ndash;&nbsp;initWithLayer:</a></code>
+	<a name="//api/name/bettery" title="bettery"></a>
+	<h3 class="method-title"><code><a href="#//api/name/bettery">&nbsp;&nbsp;bettery</a></code>
 </h3>
 
 	<div class="method-info">
@@ -169,33 +165,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>初始化mapLayer</p>
+				<p>电量</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithLayer:(JCLayer *)<em>layer</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *bettery</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>layer</code></th>
-						<td><p>图层</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>JCMapLayer</p>
-			</div>
 			
 
 			
@@ -203,7 +182,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>初始化mapLayer</p>
+				<p>电量</p>
 			</div>
 			
 
@@ -214,15 +193,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCLockerManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/getName" title="getName"></a>
-	<h3 class="method-title"><code><a href="#//api/name/getName">&ndash;&nbsp;getName</a></code>
+	<a name="//api/name/temperature" title="temperature"></a>
+	<h3 class="method-title"><code><a href="#//api/name/temperature">&nbsp;&nbsp;temperature</a></code>
 </h3>
 
 	<div class="method-info">
@@ -232,21 +211,16 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>获取图层名称</p>
+				<p>温度</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (NSString *)getName</code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *temperature</code></div>
 
 		    
 			
 
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>名称</p>
-			</div>
 			
 
 			
@@ -254,7 +228,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>获取图层名称</p>
+				<p>温度</p>
 			</div>
 			
 
@@ -265,15 +239,15 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCLockerManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/drawContext:left:top:right:bottom:" title="drawContext:left:top:right:bottom:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/drawContext:left:top:right:bottom:">&ndash;&nbsp;drawContext:left:top:right:bottom:</a></code>
+	<a name="//api/name/rssi" title="rssi"></a>
+	<h3 class="method-title"><code><a href="#//api/name/rssi">&nbsp;&nbsp;rssi</a></code>
 </h3>
 
 	<div class="method-info">
@@ -283,46 +257,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>绘制方法,</p>
+				<p>信号强度</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)drawContext:(CGContextRef)<em>context</em> left:(float)<em>left</em> top:(float)<em>top</em> right:(float)<em>right</em> bottom:(float)<em>bottom</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *rssi</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>context</code></th>
-						<td><p>上下文</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>left</code></th>
-						<td><p>左x</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>top</code></th>
-						<td><p>上y</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>right</code></th>
-						<td><p>右x</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>bottom</code></th>
-						<td><p>下y</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -332,7 +274,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>绘制方法,</p>
+				<p>信号强度</p>
 			</div>
 			
 
@@ -343,7 +285,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">JCMapLayer.h</code></p>
+				<p><code class="declared-in-ref">JCLockerManager.h</code></p>
 			</div>
 			
 			

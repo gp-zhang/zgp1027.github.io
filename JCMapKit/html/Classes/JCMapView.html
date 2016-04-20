@@ -56,6 +56,8 @@
 	
 	<optgroup label="Properties">
 		
+		<option value="//api/name/annotations">annotations</option>
+		
 		<option value="//api/name/calloutView">calloutView</option>
 		
 		<option value="//api/name/mapViewDelegate">mapViewDelegate</option>
@@ -74,19 +76,29 @@
 		
 		<option value="//api/name/addAnnotations:animated:">- addAnnotations:animated:</option>
 		
+		<option value="//api/name/addLayer:">- addLayer:</option>
+		
 		<option value="//api/name/centerOnPoint:animated:">- centerOnPoint:animated:</option>
 		
-		<option value="//api/name/displayMap:">- displayMap:</option>
+		<option value="//api/name/cleanLayer">- cleanLayer</option>
+		
+		<option value="//api/name/displayMapSize:">- displayMapSize:</option>
 		
 		<option value="//api/name/hideCallOut">- hideCallOut</option>
 		
 		<option value="//api/name/removeAnnotation:">- removeAnnotation:</option>
 		
+		<option value="//api/name/removeAnnotations:">- removeAnnotations:</option>
+		
+		<option value="//api/name/removeLayer:">- removeLayer:</option>
+		
+		<option value="//api/name/searchPoint:radius:">- searchPoint:radius:</option>
+		
 		<option value="//api/name/selectAnnotation:animated:">- selectAnnotation:animated:</option>
 		
 		<option value="//api/name/setPath:Options:">- setPath:Options:</option>
 		
-		<option value="//api/name/showCalloutForAnnotation:animated:">- showCalloutForAnnotation:animated:</option>
+		<option value="//api/name/showCalloutForPosition:offset:animated:">- showCalloutForPosition:offset:animated:</option>
 		
 		<option value="//api/name/zoomRelativePoint:">- zoomRelativePoint:</option>
 		
@@ -114,7 +126,7 @@
 	<td>UIScrollView</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>JCMapView.h<br />JCMapView.m</td>
+	<td>JCMapView.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -140,8 +152,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/displayMap:" title="displayMap:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/displayMap:">&ndash;&nbsp;displayMap:</a></code>
+	<a name="//api/name/displayMapSize:" title="displayMapSize:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/displayMapSize:">&ndash;&nbsp;displayMapSize:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -151,12 +163,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>地图加载,zoomScale/minimumZoomScale/maximumZoomScale在此方法后调用</p>
+				<p>设置地图大小</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)displayMap:(UIImage *)<em>image</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)displayMapSize:(CGSize)<em>size</em></code></div>
 
 		    
 			
@@ -165,8 +177,8 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>image</code></th>
-						<td><p>图片,请控制图片尺寸,防止内存占用过大</p></td>
+						<th scope="row" class="argument-name"><code>size</code></th>
+						<td><p>地图大小</p></td>
 					</tr>
 				
 				</table>
@@ -180,7 +192,169 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>地图加载,zoomScale/minimumZoomScale/maximumZoomScale在此方法后调用</p>
+				<p>设置地图大小</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addLayer:" title="addLayer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addLayer:">&ndash;&nbsp;addLayer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加图层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addLayer:(JCMapLayer *)<em>layer</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>layer</code></th>
+						<td><p>图层</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>添加图层</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeLayer:" title="removeLayer:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeLayer:">&ndash;&nbsp;removeLayer:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除图层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeLayer:(NSString *)<em>layername</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>layer</code></th>
+						<td><p>图层</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>移除图层</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cleanLayer" title="cleanLayer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cleanLayer">&ndash;&nbsp;cleanLayer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>清空图层</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cleanLayer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>清空图层</p>
 			</div>
 			
 
@@ -382,6 +556,64 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/removeAnnotations:" title="removeAnnotations:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeAnnotations:">&ndash;&nbsp;removeAnnotations:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>批量移除大头针</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeAnnotations:(NSArray *)<em>annotations</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>annotations</code></th>
+						<td><p>大头针数组</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>批量移除大头针</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/setPath:Options:" title="setPath:Options:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/setPath:Options:">&ndash;&nbsp;setPath:Options:</a></code>
 </h3>
@@ -393,7 +625,7 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>设置路径</p>
+				<p>设置路径,持续的高频的导航建议不要设置图片</p>
 			</div>
 			
 		    
@@ -413,7 +645,7 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>option</code></th>
-						<td><p>路径相关参数、示例:@{@&ldquo;color&rdquo;:[UIColor redColor],@&ldquo;lineWidth&rdquo;:[NSNumber numberWithFloat:20.0]}</p></td>
+						<td><p>路径相关参数、示例:@{@&ldquo;color&rdquo;:[UIColor redColor],@&ldquo;lineWidth&rdquo;:[NSNumber numberWithFloat:20.0],@&ldquo;image&rdquo;:[UIImage imageNamed:@&ldquo;&rdquo;]}</p></td>
 					</tr>
 				
 				</table>
@@ -427,7 +659,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>设置路径</p>
+				<p>设置路径,持续的高频的导航建议不要设置图片</p>
 			</div>
 			
 
@@ -634,8 +866,76 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/showCalloutForAnnotation:animated:" title="showCalloutForAnnotation:animated:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/showCalloutForAnnotation:animated:">&ndash;&nbsp;showCalloutForAnnotation:animated:</a></code>
+	<a name="//api/name/searchPoint:radius:" title="searchPoint:radius:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchPoint:radius:">&ndash;&nbsp;searchPoint:radius:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>搜索当前点的所有要素</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)searchPoint:(CGPoint)<em>point</em> radius:(float)<em>radius</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>point</code></th>
+						<td><p>搜索点</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>radius</code></th>
+						<td><p>半径</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>要素字典:key为图层名称，value为要素数组</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>搜索当前点的所有要素</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/showCalloutForPosition:offset:animated:" title="showCalloutForPosition:offset:animated:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/showCalloutForPosition:offset:animated:">&ndash;&nbsp;showCalloutForPosition:offset:animated:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -650,7 +950,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)showCalloutForAnnotation:(JCAnnotation *)<em>annotation</em> animated:(BOOL)<em>animated</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)showCalloutForPosition:(CGPoint)<em>position</em> offset:(CGPoint)<em>offset</em> animated:(BOOL)<em>animated</em></code></div>
 
 		    
 			
@@ -659,13 +959,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>annotation</code></th>
-						<td><p>气泡关联的大头针</p></td>
+						<th scope="row" class="argument-name"><code>position</code></th>
+						<td><p>气泡显示位置</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>offset</code></th>
+						<td><p>偏移</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>animated</code></th>
-						<td><p>动画开关</p></td>
+						<td><p>是否显示动画</p></td>
 					</tr>
 				
 				</table>
@@ -726,6 +1031,52 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>隐藏气泡</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCMapView.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/annotations" title="annotations"></a>
+	<h3 class="method-title"><code><a href="#//api/name/annotations">&nbsp;&nbsp;annotations</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>地图上添加的所有大头针</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *annotations</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>地图上添加的所有大头针</p>
 			</div>
 			
 
@@ -893,7 +1244,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-02-01</p>
+						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-04-20</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

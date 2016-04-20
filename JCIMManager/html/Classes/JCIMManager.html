@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>JCIMManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">JCIMManager </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">甲虫网络</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getHeadWithUser:">- getHeadWithUser:</option>
+		
+		<option value="//api/name/getPhoneCode:">- getPhoneCode:</option>
+		
+		<option value="//api/name/getUserInfo:">- getUserInfo:</option>
+		
+		<option value="//api/name/getUsersByMap:appId:time:">- getUsersByMap:appId:time:</option>
+		
+		<option value="//api/name/loginWithUsername:passwd:">- loginWithUsername:passwd:</option>
+		
+		<option value="//api/name/logout">- logout</option>
+		
+		<option value="//api/name/modifyInfo:password:email:phone:sex:age:address:">- modifyInfo:password:email:phone:sex:age:address:</option>
+		
+		<option value="//api/name/modifyPass:oldPassword:newPassword:">- modifyPass:oldPassword:newPassword:</option>
+		
+		<option value="//api/name/queryFootUsername:appID:startTime:endTime:">- queryFootUsername:appID:startTime:endTime:</option>
+		
+		<option value="//api/name/recentFootUsername:appID:">- recentFootUsername:appID:</option>
+		
+		<option value="//api/name/registerUser:password:">- registerUser:password:</option>
+		
+		<option value="//api/name/resetPassByEmail:email:">- resetPassByEmail:email:</option>
+		
+		<option value="//api/name/resetPassByPhone:code:newPass:">- resetPassByPhone:code:newPass:</option>
+		
+		<option value="//api/name/sendFootUsername:appID:mapID:X:Y:Z:">- sendFootUsername:appID:mapID:X:Y:Z:</option>
+		
+		<option value="//api/name/sendMessageWithUsername:message:">- sendMessageWithUsername:message:</option>
+		
+		<option value="//api/name/setHeadWithUser:image:">- setHeadWithUser:image:</option>
+		
+		<option value="//api/name/setHost:port:">- setHost:port:</option>
+		
+		<option value="//api/name/startRecordFootUsername:appID:">- startRecordFootUsername:appID:</option>
+		
+		<option value="//api/name/stopRecordFootUsername:appID:">- stopRecordFootUsername:appID:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">JCIMManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>JCIMManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setHost:port:" title="setHost:port:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHost:port:">&ndash;&nbsp;setHost:port:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置服务器地址//需要指定服务器时使用，不设置将使用默认服务器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setHost:(NSString *)<em>host</em> port:(int)<em>port</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>host</code></th>
+						<td><p>主机地址（ip/域名）</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>port</code></th>
+						<td><p>端口号</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置服务器地址//需要指定服务器时使用，不设置将使用默认服务器</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerUser:password:" title="registerUser:password:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerUser:password:">&ndash;&nbsp;registerUser:password:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注册 结果见：IM_ACTION_REGISTER_SUCCESS、IM_ACTION_REGISTER_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerUser:(NSString *)<em>username</em> password:(NSString *)<em>pass</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名//字母或数字</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pass</code></th>
+						<td><p>密码 //6~16位数字或字母</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>注册 结果见：IM_ACTION_REGISTER_SUCCESS、IM_ACTION_REGISTER_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUserInfo:" title="getUserInfo:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUserInfo:">&ndash;&nbsp;getUserInfo:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户信息.结果见：IM_ACTION_GET_INFO_SUCCESS、IM_ACTION_GET_INFO_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getUserInfo:(NSString *)<em>username</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户信息.结果见：IM_ACTION_GET_INFO_SUCCESS、IM_ACTION_GET_INFO_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/modifyPass:oldPassword:newPassword:" title="modifyPass:oldPassword:newPassword:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modifyPass:oldPassword:newPassword:">&ndash;&nbsp;modifyPass:oldPassword:newPassword:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改密码.结果见：IM_ACTION_MODIFY_PASS_SUCCESS、IM_ACTION_MODIFY_PASS_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)modifyPass:(NSString *)<em>username</em> oldPassword:(NSString *)<em>oldpass</em> newPassword:(NSString *)<em>newpass</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>oldpass</code></th>
+						<td><p>旧密码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpass</code></th>
+						<td><p>新密码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改密码.结果见：IM_ACTION_MODIFY_PASS_SUCCESS、IM_ACTION_MODIFY_PASS_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHeadWithUser:image:" title="setHeadWithUser:image:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHeadWithUser:image:">&ndash;&nbsp;setHeadWithUser:image:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>设置用户头像.结果见：IM_ACTION_SET_PHOTO_SUCCESS、IM_ACTION_SET_PHOTO_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setHeadWithUser:(NSString *)<em>username</em> image:(UIImage *)<em>image</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>image</code></th>
+						<td><p>头像</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>设置用户头像.结果见：IM_ACTION_SET_PHOTO_SUCCESS、IM_ACTION_SET_PHOTO_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHeadWithUser:" title="getHeadWithUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHeadWithUser:">&ndash;&nbsp;getHeadWithUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取用户名.结果见：IM_ACTION_GET_PHOTO_SUCCESS、IM_ACTION_GET_PHOTO_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getHeadWithUser:(NSString *)<em>username</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取用户名.结果见：IM_ACTION_GET_PHOTO_SUCCESS、IM_ACTION_GET_PHOTO_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/modifyInfo:password:email:phone:sex:age:address:" title="modifyInfo:password:email:phone:sex:age:address:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modifyInfo:password:email:phone:sex:age:address:">&ndash;&nbsp;modifyInfo:password:email:phone:sex:age:address:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>修改用户信息.结果见：IM_ACTION_MODIFY_INFO_SUCCESS、IM_ACTION_MODIFY_INFO_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)modifyInfo:(NSString *)<em>username</em> password:(NSString *)<em>pass</em> email:(NSString *)<em>email</em> phone:(NSString *)<em>phone</em> sex:(SEXTYPE)<em>sex</em> age:(int)<em>age</em> address:(NSString *)<em>addr</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名(必填)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pass</code></th>
+						<td><p>密码(必填)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>邮箱</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>phone</code></th>
+						<td><p>手机号</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sex</code></th>
+						<td><p>性别</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>age</code></th>
+						<td><p>年龄</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>addr</code></th>
+						<td><p>地址</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>修改用户信息.结果见：IM_ACTION_MODIFY_INFO_SUCCESS、IM_ACTION_MODIFY_INFO_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPhoneCode:" title="getPhoneCode:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPhoneCode:">&ndash;&nbsp;getPhoneCode:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>找回密码-》手机验证码获取.结果见：IM_ACTION_GET_PHONE_CODE_SUCCESS、IM_ACTION_GET_PHONE_CODE_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPhoneCode:(NSString *)<em>username</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>找回密码-》手机验证码获取.结果见：IM_ACTION_GET_PHONE_CODE_SUCCESS、IM_ACTION_GET_PHONE_CODE_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetPassByPhone:code:newPass:" title="resetPassByPhone:code:newPass:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetPassByPhone:code:newPass:">&ndash;&nbsp;resetPassByPhone:code:newPass:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过手机验证码重设密码.结果见：IM_ACTION_RESET_PASS_BY_PHONE_SUCCESS、IM_ACTION_RESET_PASS_BY_PHONE_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetPassByPhone:(NSString *)<em>username</em> code:(NSString *)<em>code</em> newPass:(NSString *)<em>newpass</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>验证码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpass</code></th>
+						<td><p>新密码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过手机验证码重设密码.结果见：IM_ACTION_RESET_PASS_BY_PHONE_SUCCESS、IM_ACTION_RESET_PASS_BY_PHONE_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetPassByEmail:email:" title="resetPassByEmail:email:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetPassByEmail:email:">&ndash;&nbsp;resetPassByEmail:email:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>通过邮件的方式重设密码.结果见：IM_ACTION_RESET_PASS_BY_EMAIL_SUCCESS、IM_ACTION_RESET_PASS_BY_EMAIL_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resetPassByEmail:(NSString *)<em>username</em> email:(NSString *)<em>email</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>邮箱</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>通过邮件的方式重设密码.结果见：IM_ACTION_RESET_PASS_BY_EMAIL_SUCCESS、IM_ACTION_RESET_PASS_BY_EMAIL_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginWithUsername:passwd:" title="loginWithUsername:passwd:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginWithUsername:passwd:">&ndash;&nbsp;loginWithUsername:passwd:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>登录.结果见：IM_ACTION_LOGIN_SUCCESS、IM_ACTION_LOGIN_FAILURE(掉线也会通过此参数回调)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginWithUsername:(NSString *)<em>username</em> passwd:(NSString *)<em>passwd</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>passwd</code></th>
+						<td><p>密码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>登录.结果见：IM_ACTION_LOGIN_SUCCESS、IM_ACTION_LOGIN_FAILURE(掉线也会通过此参数回调)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logout" title="logout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logout">&ndash;&nbsp;logout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>注销登录</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>注销登录</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendMessageWithUsername:message:" title="sendMessageWithUsername:message:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendMessageWithUsername:message:">&ndash;&nbsp;sendMessageWithUsername:message:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送消息、收到消息：IM_ACTION_RECV_MESSAGE</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendMessageWithUsername:(NSString *)<em>username</em> message:(NSString *)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>目标用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>密码</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送消息、收到消息：IM_ACTION_RECV_MESSAGE</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startRecordFootUsername:appID:" title="startRecordFootUsername:appID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startRecordFootUsername:appID:">&ndash;&nbsp;startRecordFootUsername:appID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始记录足迹.结果见：IM_ACTION_START_RECORD_TRACK_SUCCESS、IM_ACTION_START_RECORD_TRACK_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startRecordFootUsername:(NSString *)<em>username</em> appID:(NSString *)<em>appid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appid</code></th>
+						<td><p>应用id//同一款app多平台请保证一致</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>开始记录足迹.结果见：IM_ACTION_START_RECORD_TRACK_SUCCESS、IM_ACTION_START_RECORD_TRACK_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sendFootUsername:appID:mapID:X:Y:Z:" title="sendFootUsername:appID:mapID:X:Y:Z:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sendFootUsername:appID:mapID:X:Y:Z:">&ndash;&nbsp;sendFootUsername:appID:mapID:X:Y:Z:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>发送足迹.结果见：IM_ACTION_SEND_TRACK_OK、IM_ACTION_SEND_TRACK_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sendFootUsername:(NSString *)<em>username</em> appID:(NSString *)<em>appid</em> mapID:(NSString *)<em>mapid</em> X:(NSString *)<em>x</em> Y:(NSString *)<em>y</em> Z:(NSString *)<em>z</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appid</code></th>
+						<td><p>应用id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mapid</code></th>
+						<td><p>地图id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>x</code></th>
+						<td><p>x坐标</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>y</code></th>
+						<td><p>y坐标</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>z</code></th>
+						<td><p>z坐标</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>发送足迹.结果见：IM_ACTION_SEND_TRACK_OK、IM_ACTION_SEND_TRACK_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryFootUsername:appID:startTime:endTime:" title="queryFootUsername:appID:startTime:endTime:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryFootUsername:appID:startTime:endTime:">&ndash;&nbsp;queryFootUsername:appID:startTime:endTime:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询指定时间段的足迹.结果见：IM_ACTION_GET_TRACK_OK、IM_ACTION_GET_TRACK_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)queryFootUsername:(NSString *)<em>username</em> appID:(NSString *)<em>appid</em> startTime:(NSString *)<em>starttime</em> endTime:(NSString *)<em>endtime</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appid</code></th>
+						<td><p>应用id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>starttime</code></th>
+						<td><p>开始时间；格式：2015/05/18 09:52:46</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>endtime</code></th>
+						<td><p>结束时间；格式：2015/05/18 09:52:46</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询指定时间段的足迹.结果见：IM_ACTION_GET_TRACK_OK、IM_ACTION_GET_TRACK_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recentFootUsername:appID:" title="recentFootUsername:appID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recentFootUsername:appID:">&ndash;&nbsp;recentFootUsername:appID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>查询最近一次的足迹.结果见：IM_ACTION_GET_RECENT_TRACK_OK、IM_ACTION_GET_RECENT_TRACK_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)recentFootUsername:(NSString *)<em>username</em> appID:(NSString *)<em>appid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appid</code></th>
+						<td><p>应用id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>查询最近一次的足迹.结果见：IM_ACTION_GET_RECENT_TRACK_OK、IM_ACTION_GET_RECENT_TRACK_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopRecordFootUsername:appID:" title="stopRecordFootUsername:appID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopRecordFootUsername:appID:">&ndash;&nbsp;stopRecordFootUsername:appID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止记录足迹.结果见：IM_ACTION_STOP_RECORD_TRACK_SUCCESS、IM_ACTION_STOP_RECORD_TRACK_FAILED</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopRecordFootUsername:(NSString *)<em>username</em> appID:(NSString *)<em>appid</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>用户名</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appid</code></th>
+						<td><p>应用id</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>停止记录足迹.结果见：IM_ACTION_STOP_RECORD_TRACK_SUCCESS、IM_ACTION_STOP_RECORD_TRACK_FAILED</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUsersByMap:appId:time:" title="getUsersByMap:appId:time:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUsersByMap:appId:time:">&ndash;&nbsp;getUsersByMap:appId:time:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取当前地图的用户.结果：IM_ACTION_GET_MAP_USERS</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getUsersByMap:(NSString *)<em>mapid</em> appId:(NSString *)<em>appid</em> time:(NSString *)<em>currenttime</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mapid</code></th>
+						<td><p>地图id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appid</code></th>
+						<td><p>应用id</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>currenttime</code></th>
+						<td><p>时间格式:2015/05/18 09:52:46</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>获取当前地图的用户.结果：IM_ACTION_GET_MAP_USERS</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">JCIMManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 甲虫网络. All rights reserved. Updated: 2016-04-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
