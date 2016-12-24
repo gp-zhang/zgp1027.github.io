@@ -1,105 +1,277 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="utf-8" />
-      <title>projectSetting</title>
-      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(171, 178, 191); overflow: auto; background-color: rgb(40, 44, 52); }
-.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
-.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
-.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
-.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
-.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
-.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
-.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
-.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
-.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
-.markdown-preview:not([data-use-github-style]) del { color: rgb(124, 135, 156); }
-.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(82, 139, 255); }
-.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
-.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
-.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
-.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(124, 135, 156); border-color: rgb(75, 83, 98); border-width: 4px; }
-.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(75, 83, 98); background: none; }
-.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
-.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
-.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(75, 83, 98); }
-.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(58, 63, 75); }
-.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
-.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); background-color: rgb(58, 63, 75); }
-.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
-.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
-.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
-.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
-.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
-.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
-.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
-.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
-.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
-.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
-.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
-.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
-.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
-.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
-.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
-.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
-.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
-.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
-.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
-.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
-.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
-.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
-.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
-.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
-.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
-.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
-.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
-.markdown-preview[data-use-github-style] dl { padding: 0px; }
-.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
-.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
-.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
-.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
-.markdown-preview[data-use-github-style] table th { font-weight: bold; }
-.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
-.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
-.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
-.markdown-preview[data-use-github-style] .emoji { max-width: none; }
-.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
-.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
-.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
-.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
-.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
-.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
-.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
-.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
-.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
-.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
-.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
-.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
-.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
-.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
-.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
-.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
-.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
-.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
-.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
-.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
-.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
-.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
-.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
-.markdown-preview[data-use-github-style] code { color: inherit; }
-.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
-.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
-.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+<!DOCTYPE html> <html> <head> <title>index</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">  <style> .markdown-preview-enhanced pre, .markdown-preview-enhanced .host { color: rgb(171, 178, 191); background-color: rgb(40, 44, 52); }
+.markdown-preview-enhanced pre .line.cursor-line, .markdown-preview-enhanced .host .line.cursor-line { background-color: rgba(153, 187, 255, 0.0392157); }
+.markdown-preview-enhanced pre .invisible, .markdown-preview-enhanced .host .invisible { color: rgb(171, 178, 191); }
+.markdown-preview-enhanced pre .cursor, .markdown-preview-enhanced .host .cursor { border-left: 2px solid rgb(82, 139, 255); }
+.markdown-preview-enhanced pre .selection .region, .markdown-preview-enhanced .host .selection .region { background-color: rgb(62, 68, 81); }
+.markdown-preview-enhanced pre .bracket-matcher .region, .markdown-preview-enhanced .host .bracket-matcher .region { border-bottom: 1px solid rgb(82, 139, 255); box-sizing: border-box; }
+.markdown-preview-enhanced pre .invisible-character, .markdown-preview-enhanced .host .invisible-character { color: rgba(171, 178, 191, 0.14902); }
+.markdown-preview-enhanced pre .indent-guide, .markdown-preview-enhanced .host .indent-guide { color: rgba(171, 178, 191, 0.14902); }
+.markdown-preview-enhanced pre .wrap-guide, .markdown-preview-enhanced .host .wrap-guide { background-color: rgba(171, 178, 191, 0.14902); }
+.markdown-preview-enhanced pre .find-result .region.region.region, .markdown-preview-enhanced .host .find-result .region.region.region, .markdown-preview-enhanced pre .current-result .region.region.region, .markdown-preview-enhanced .host .current-result .region.region.region { border-radius: 2px; transition: border-color 0.4s; background-color: rgba(82, 139, 255, 0.239216); }
+.markdown-preview-enhanced pre .find-result .region.region.region, .markdown-preview-enhanced .host .find-result .region.region.region { border: 2px solid transparent; }
+.markdown-preview-enhanced pre .current-result .region.region.region, .markdown-preview-enhanced .host .current-result .region.region.region { border: 2px solid rgb(82, 139, 255); transition-duration: 0.1s; }
+.markdown-preview-enhanced pre .gutter .line-number, .markdown-preview-enhanced .host .gutter .line-number { color: rgb(99, 109, 131); -webkit-font-smoothing: antialiased; }
+.markdown-preview-enhanced pre .gutter .line-number.cursor-line, .markdown-preview-enhanced .host .gutter .line-number.cursor-line { color: rgb(171, 178, 191); background-color: rgb(44, 49, 58); }
+.markdown-preview-enhanced pre .gutter .line-number.cursor-line-no-selection, .markdown-preview-enhanced .host .gutter .line-number.cursor-line-no-selection { background-color: transparent; }
+.markdown-preview-enhanced pre .gutter .line-number .icon-right, .markdown-preview-enhanced .host .gutter .line-number .icon-right { color: rgb(171, 178, 191); }
+.markdown-preview-enhanced pre .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before, .markdown-preview-enhanced .host .gutter:not(.git-diff-icon) .line-number.git-line-removed.git-line-removed::before { bottom: -3px; }
+.markdown-preview-enhanced pre .gutter:not(.git-diff-icon) .line-number.git-line-removed::after, .markdown-preview-enhanced .host .gutter:not(.git-diff-icon) .line-number.git-line-removed::after { content: ""; position: absolute; left: 0px; bottom: 0px; width: 25px; border-bottom: 1px dotted rgba(224, 82, 82, 0.498039); pointer-events: none; }
+.markdown-preview-enhanced pre .gutter .line-number.folded, .markdown-preview-enhanced .host .gutter .line-number.folded, .markdown-preview-enhanced pre .gutter .line-number::after, .markdown-preview-enhanced .host .gutter .line-number::after, .markdown-preview-enhanced pre .fold-marker::after, .markdown-preview-enhanced .host .fold-marker::after { color: rgb(171, 178, 191); }
+.markdown-preview-enhanced { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; font-size: 16px; line-height: 1.6; color: rgb(171, 178, 191); overflow: initial; margin: 10px 13px; padding: 2em; box-sizing: border-box; word-wrap: break-word; background-color: rgb(40, 44, 52); }
+.markdown-preview-enhanced[data-use-github-style] { color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
+.markdown-preview-enhanced > :first-child { margin-top: 0px; }
+.markdown-preview-enhanced[is="space-pen-div"] { width: 100%; margin: 0px; z-index: 999; overflow: scroll; font-size: 16px; display: block; position: absolute; }
+.markdown-preview-enhanced[is="space-pen-div"][data-use-github-style] { }
+.markdown-preview-enhanced[is="space-pen-div"][data-use-github-style] ::-webkit-scrollbar-track { box-shadow: rgba(218, 218, 218, 0.6) 0px 0px 3px inset; background-color: rgb(244, 244, 244); }
+.markdown-preview-enhanced[is="space-pen-div"][data-use-github-style] ::-webkit-scrollbar-thumb { border-radius: 10px; border-color: transparent; background-color: rgb(204, 204, 204); }
+.markdown-preview-enhanced h1, .markdown-preview-enhanced h2, .markdown-preview-enhanced h3, .markdown-preview-enhanced h4, .markdown-preview-enhanced h5, .markdown-preview-enhanced h6 { line-height: 1.2; margin-top: 1em; margin-bottom: 16px; color: rgb(255, 255, 255); }
+.markdown-preview-enhanced[data-use-github-style] h1, .markdown-preview-enhanced[data-use-github-style] h2, .markdown-preview-enhanced[data-use-github-style] h3, .markdown-preview-enhanced[data-use-github-style] h4, .markdown-preview-enhanced[data-use-github-style] h5 { color: rgb(51, 51, 51); font-weight: 600; }
+.markdown-preview-enhanced[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview-enhanced[data-use-github-style] h6 { color: rgb(119, 119, 119); }
+.markdown-preview-enhanced h1 { font-size: 2.25em; font-weight: 300; padding-bottom: 0.3em; border-bottom: 1px solid rgb(75, 83, 98); }
+.markdown-preview-enhanced h2 { font-size: 1.75em; font-weight: 400; padding-bottom: 0.3em; border-bottom: 1px solid rgb(75, 83, 98); }
+.markdown-preview-enhanced h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview-enhanced h4 { font-size: 1.25em; font-weight: 600; }
+.markdown-preview-enhanced h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview-enhanced h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview-enhanced[data-use-github-style] h1, .markdown-preview-enhanced[data-use-github-style] h2 { border-bottom: 1px solid rgb(231, 231, 231); }
+.markdown-preview-enhanced strong { color: rgb(255, 255, 255); }
+.markdown-preview-enhanced[data-use-github-style] strong { color: rgb(51, 51, 51); }
+.markdown-preview-enhanced del { color: rgb(124, 135, 156); }
+.markdown-preview-enhanced a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview-enhanced a { color: rgb(0, 136, 204); text-decoration: none; }
+.markdown-preview-enhanced a:hover { color: rgb(0, 80, 163); text-decoration: none; }
+.markdown-preview-enhanced img { max-width: 100%; }
+.markdown-preview-enhanced > p { margin-top: 0px; margin-bottom: 16px; word-wrap: break-word; }
+.markdown-preview-enhanced > ul, .markdown-preview-enhanced > ol { margin-bottom: 16px; }
+.markdown-preview-enhanced ul, .markdown-preview-enhanced ol { padding-left: 2em; }
+.markdown-preview-enhanced ul.no-list, .markdown-preview-enhanced ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview-enhanced ul ul, .markdown-preview-enhanced ul ol, .markdown-preview-enhanced ol ol, .markdown-preview-enhanced ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview-enhanced li { margin-bottom: 0px; }
+.markdown-preview-enhanced li.task-list-item { list-style: none; }
+.markdown-preview-enhanced li > p { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview-enhanced .task-list-item-checkbox { margin: 0px 0.2em 0.25em -1.6em; vertical-align: middle; }
+.markdown-preview-enhanced .task-list-item-checkbox:hover { cursor: pointer; }
+.markdown-preview-enhanced blockquote { margin: 16px 0px; font-size: inherit; padding: 0px 15px; color: rgb(124, 135, 156); border-left: 4px solid rgb(75, 83, 98); }
+.markdown-preview-enhanced blockquote > :first-child { margin-top: 0px; }
+.markdown-preview-enhanced blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview-enhanced[data-use-github-style] blockquote { color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview-enhanced hr { height: 4px; margin: 32px 0px; border: 0px none; background-color: rgb(75, 83, 98); }
+.markdown-preview-enhanced[data-use-github-style] hr { background-color: rgb(231, 231, 231); }
+.markdown-preview-enhanced table { margin: 10px 0px 15px; border-collapse: collapse; border-spacing: 0px; display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview-enhanced table th { font-weight: bold; color: rgb(255, 255, 255); }
+.markdown-preview-enhanced table td, .markdown-preview-enhanced table th { border: 1px solid rgb(75, 83, 98); padding: 6px 13px; }
+.markdown-preview-enhanced[data-use-github-style] th { color: rgb(51, 51, 51); }
+.markdown-preview-enhanced[data-use-github-style] td, .markdown-preview-enhanced[data-use-github-style] th { border: 1px solid rgb(221, 221, 221); }
+.markdown-preview-enhanced dl { padding: 0px; }
+.markdown-preview-enhanced dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview-enhanced dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview-enhanced code { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; color: rgb(255, 255, 255); border-radius: 3px; padding: 0.2em 0px; font-size: 0.85em !important; background-color: rgb(58, 63, 75); }
+.markdown-preview-enhanced code::before, .markdown-preview-enhanced code::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview-enhanced[data-use-github-style] code { color: inherit; background-color: rgba(0, 0, 0, 0.0392157) !important; }
+.markdown-preview-enhanced pre > code { padding: 0px; margin: 0px; word-break: normal; white-space: pre; border: 0px; font-size: 0.85em !important; background: transparent; }
+.markdown-preview-enhanced .highlight { margin-bottom: 16px; }
+.markdown-preview-enhanced .highlight pre, .markdown-preview-enhanced pre { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; padding: 16px; overflow: auto; line-height: 1.45; color: rgb(171, 178, 191); border: rgb(75, 83, 98); border-radius: 3px; font-size: 0.85em !important; background-color: rgb(49, 54, 63); }
+.markdown-preview-enhanced .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview-enhanced pre { word-wrap: break-word; white-space: normal; word-break: break-all; }
+.markdown-preview-enhanced pre .section { opacity: 1; }
+.markdown-preview-enhanced pre code, .markdown-preview-enhanced pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview-enhanced pre code::before, .markdown-preview-enhanced pre tt::before, .markdown-preview-enhanced pre code::after, .markdown-preview-enhanced pre tt::after { content: normal; }
+.markdown-preview-enhanced p, .markdown-preview-enhanced blockquote, .markdown-preview-enhanced ul, .markdown-preview-enhanced ol, .markdown-preview-enhanced dl, .markdown-preview-enhanced pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview-enhanced pre.editor-colors { margin: 16px 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(49, 54, 63); }
+.markdown-preview-enhanced kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(75, 83, 98) rgb(75, 83, 98) rgb(62, 68, 81); padding: 2px 4px; background-color: rgb(58, 63, 75); }
+.markdown-preview-enhanced[data-use-github-style] kbd { color: rgb(51, 51, 51); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview-enhanced .pagebreak, .markdown-preview-enhanced .newpage { break-before: page; }
+@media screen and (min-width: 914px) { 
+  .markdown-preview-enhanced { width: 854px; margin: 10px auto; background: rgb(40, 44, 52); }
+}
+@media screen and (max-width: 400px) { 
+  .markdown-preview-enhanced { font-size: 14px; }
+}
+@media screen and (min-width: 914px) { 
+  .markdown-preview-enhanced[data-use-github-style] { background: rgb(255, 255, 255); }
+}
+@media print { 
+  .markdown-preview-enhanced { background-color: rgb(40, 44, 52); }
+  .markdown-preview-enhanced h1, .markdown-preview-enhanced h2, .markdown-preview-enhanced h3, .markdown-preview-enhanced h4, .markdown-preview-enhanced h5, .markdown-preview-enhanced h6 { color: rgb(255, 255, 255); break-after: avoid; }
+  .markdown-preview-enhanced blockquote { color: rgb(124, 135, 156); }
+  .markdown-preview-enhanced table, .markdown-preview-enhanced pre { break-inside: avoid; }
+  .markdown-preview-enhanced table { display: table; }
+  .markdown-preview-enhanced img { display: block; max-width: 100%; max-height: 100%; }
+  .markdown-preview-enhanced pre, .markdown-preview-enhanced code { word-wrap: break-word; white-space: normal; }
+}
+@media print { 
+  .markdown-preview-enhanced[data-use-github-style] { background-color: rgb(255, 255, 255); }
+  .markdown-preview-enhanced[data-use-github-style] h1, .markdown-preview-enhanced[data-use-github-style] h2, .markdown-preview-enhanced[data-use-github-style] h3, .markdown-preview-enhanced[data-use-github-style] h4, .markdown-preview-enhanced[data-use-github-style] h5, .markdown-preview-enhanced[data-use-github-style] h6 { color: rgb(34, 34, 34); }
+  .markdown-preview-enhanced[data-use-github-style] blockquote { color: rgb(119, 119, 119); }
+  .markdown-preview-enhanced[data-use-github-style] pre { border: 2px solid rgb(246, 246, 246); }
+}
+.markdown-preview-enhanced .mermaid { margin-bottom: 16px; }
+.markdown-preview-enhanced .mermaid .edgePath .path { stroke: rgb(255, 255, 255); }
+.markdown-preview-enhanced .mermaid .edgePath marker path { fill: rgb(255, 255, 255) !important; opacity: 1 !important; }
+.markdown-preview-enhanced .mermaid line, .markdown-preview-enhanced .mermaid marker { stroke: rgb(255, 255, 255) !important; opacity: 1 !important; }
+.markdown-preview-enhanced .mermaid .messageText { fill: rgb(255, 255, 255); }
+.markdown-preview-enhanced[data-use-github-style] .mermaid .edgePath .path { stroke: rgb(51, 51, 51); }
+.markdown-preview-enhanced[data-use-github-style] .mermaid marker path { fill: rgb(51, 51, 51) !important; opacity: 1 !important; }
+.markdown-preview-enhanced[data-use-github-style] line, .markdown-preview-enhanced[data-use-github-style] marker { stroke: rgb(51, 51, 51) !important; opacity: 1 !important; }
+.markdown-preview-enhanced[data-use-github-style] .messageText { fill: rgb(51, 51, 51); }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk { position: relative; }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk .output-div { overflow-x: auto; }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk pre { cursor: text; }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk .btn-group { position: absolute; right: 0px; top: 0px; display: none; }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk .btn-group .run-btn, .markdown-preview-enhanced[is="space-pen-div"] .code-chunk .btn-group .run-all-btn { float: right; margin-left: 4px; border-radius: 3px; font-size: 0.8em; color: rgb(238, 238, 238); border: none; background-image: none; background-color: rgb(82, 139, 255); }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk .btn-group .run-btn:hover, .markdown-preview-enhanced[is="space-pen-div"] .code-chunk .btn-group .run-all-btn:hover { cursor: pointer; background-color: rgb(75, 127, 232); }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk:hover .btn-group { display: block; }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk .status { position: absolute; right: 0px; top: 0px; font-size: 0.85em; color: inherit; padding: 2px 6px; display: none; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk.running .btn-group { display: none; }
+.markdown-preview-enhanced[is="space-pen-div"] .code-chunk.running .status { display: block; }
+.markdown-preview-enhanced:not([is="space-pen-div"]) .code-chunk .btn-group { display: none; }
+.markdown-preview-enhanced:not([is="space-pen-div"]) .code-chunk .status { display: none; }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors, .markdown-preview-enhanced .github-syntax-theme .host { color: rgb(51, 51, 51); background-color: rgb(247, 247, 247); }
+.markdown-preview-enhanced .github-syntax-theme pre { color: rgb(51, 51, 51); background-color: rgb(247, 247, 247); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .gutter, .markdown-preview-enhanced .github-syntax-theme .host .gutter { color: rgb(179, 179, 179); background-color: rgb(255, 255, 255); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .gutter .line-number.cursor-line, .markdown-preview-enhanced .github-syntax-theme .host .gutter .line-number.cursor-line { color: rgb(77, 77, 77); background-color: rgb(245, 245, 245); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .gutter .line-number.cursor-line-no-selection, .markdown-preview-enhanced .github-syntax-theme .host .gutter .line-number.cursor-line-no-selection { color: rgb(77, 77, 77); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .wrap-guide, .markdown-preview-enhanced .github-syntax-theme .host .wrap-guide { color: rgb(223, 223, 223); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .indent-guide, .markdown-preview-enhanced .github-syntax-theme .host .indent-guide { color: rgb(223, 223, 223); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .invisible-character, .markdown-preview-enhanced .github-syntax-theme .host .invisible-character { color: rgb(223, 223, 223); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .search-results .marker .region, .markdown-preview-enhanced .github-syntax-theme .host .search-results .marker .region { border: rgb(0, 0, 0); background-color: transparent; }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors .search-results .marker.current-result .region, .markdown-preview-enhanced .github-syntax-theme .host .search-results .marker.current-result .region { border: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors.is-focused .cursor, .markdown-preview-enhanced .github-syntax-theme .host(.is-focused) .cursor { border-color: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors.is-focused .selection .region, .markdown-preview-enhanced .github-syntax-theme .host(.is-focused) .selection .region { background-color: rgba(178, 215, 255, 0.4); }
+.markdown-preview-enhanced .github-syntax-theme pre.editor-colors.is-focused .line-number.cursor-line-no-selection, .markdown-preview-enhanced .github-syntax-theme pre.editor-colors.is-focused .line.cursor-line, .markdown-preview-enhanced .github-syntax-theme .host(.is-focused) .line-number.cursor-line-no-selection, .markdown-preview-enhanced .github-syntax-theme .host(.is-focused) .line.cursor-line { background-color: rgba(240, 240, 240, 0.498039); }
+.markdown-preview-enhanced .github-syntax-theme .comment, .markdown-preview-enhanced .github-syntax-theme .punctuation.comment { color: rgb(176, 176, 176); }
+.markdown-preview-enhanced .github-syntax-theme .string, .markdown-preview-enhanced .github-syntax-theme .string .constant.character.escape { color: rgb(34, 115, 195); }
+.markdown-preview-enhanced .github-syntax-theme .constant.numeric { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .constant.language { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .constant.character, .markdown-preview-enhanced .github-syntax-theme .constant.other.rgb-value { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .constant.numeric.line-number.find-in-files, .markdown-preview-enhanced .github-syntax-theme .constant.numeric.line-number.match.find-in-files { color: rgb(171, 176, 179); }
+.markdown-preview-enhanced .github-syntax-theme .entity.name.class { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .entity.other.inherited-class { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .meta.tag.any.html, .markdown-preview-enhanced .github-syntax-theme .meta.tag.block.any.html { color: rgb(171, 176, 179); }
+.markdown-preview-enhanced .github-syntax-theme .entity.name.tag { color: rgb(99, 163, 92); }
+.markdown-preview-enhanced .github-syntax-theme .entity.name.function { color: rgb(133, 103, 181); }
+.markdown-preview-enhanced .github-syntax-theme .entity.other.attribute-name, .markdown-preview-enhanced .github-syntax-theme .entity.other.attribute-name .punctuation.definition.entity.scss, .markdown-preview-enhanced .github-syntax-theme .entity.other.attribute-name.id.css, .markdown-preview-enhanced .github-syntax-theme .entity.other.attribute-name.id.css .punctuation.definition.entity.css, .markdown-preview-enhanced .github-syntax-theme .entity.other.attribute-name.class.css .punctuation.definition.entity.css { color: rgb(133, 103, 181); }
+.markdown-preview-enhanced .github-syntax-theme .punctuation.definition.tag.begin.html, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.tag.end.html, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.tag.html, .markdown-preview-enhanced .github-syntax-theme .meta.tag.block.any.html { color: rgb(51, 51, 51); }
+.markdown-preview-enhanced .github-syntax-theme .keyword.control { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .keyword.operator { color: rgb(133, 103, 181); }
+.markdown-preview-enhanced .github-syntax-theme .storage { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .storage.type { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .support.function { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .support.constant { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .support.type, .markdown-preview-enhanced .github-syntax-theme .support.class, .markdown-preview-enhanced .github-syntax-theme .meta.property-name.scss { color: rgb(0, 153, 204); }
+.markdown-preview-enhanced .github-syntax-theme .support.other.variable { color: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme .invalid, .markdown-preview-enhanced .github-syntax-theme .invalid.illegal { color: rgb(248, 248, 248); background-color: rgb(181, 42, 29); }
+.markdown-preview-enhanced .github-syntax-theme .invalid.deprecated { color: rgb(181, 42, 29); background-color: rgb(255, 255, 255); }
+.markdown-preview-enhanced .github-syntax-theme .entity.name.filename.find-in-files { color: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme .source.css .punctuation.definition.entity, .markdown-preview-enhanced .github-syntax-theme .punctuation.terminator.rule.scss { color: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme .source.css .entity.other.attribute-name.pseudo-class, .markdown-preview-enhanced .github-syntax-theme .source.css .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .source.css .meta.value, .markdown-preview-enhanced .github-syntax-theme .source.css .support.constant, .markdown-preview-enhanced .github-syntax-theme .source.css .support.function { color: rgb(99, 163, 92); }
+.markdown-preview-enhanced .github-syntax-theme .source.scss .entity.other.attribute-name.pseudo-class, .markdown-preview-enhanced .github-syntax-theme .source.scss .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .support.constant.property-value, .markdown-preview-enhanced .github-syntax-theme .source.scss .support.function, .markdown-preview-enhanced .github-syntax-theme .meta.property-value.scss { color: rgb(99, 163, 92); }
+.markdown-preview-enhanced .github-syntax-theme .variable, .markdown-preview-enhanced .github-syntax-theme .source.scss .variable, .markdown-preview-enhanced .github-syntax-theme .variable.interpolation.scss, .markdown-preview-enhanced .github-syntax-theme .source.scss .meta.set.variable { color: rgb(222, 104, 173); }
+.markdown-preview-enhanced .github-syntax-theme .keyword.control.else.scss, .markdown-preview-enhanced .github-syntax-theme .keyword.control.if.scss, .markdown-preview-enhanced .github-syntax-theme .keyword.control.content.scss { color: rgb(99, 163, 92); }
+.markdown-preview-enhanced .github-syntax-theme .keyword.other.unit { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .keyword.other.important { color: rgb(235, 69, 53); }
+.markdown-preview-enhanced .github-syntax-theme .entity.name.tag.reference.scss { color: rgb(181, 127, 0); }
+.markdown-preview-enhanced .github-syntax-theme .entity.name.type.new.js { color: rgb(133, 103, 181); }
+.markdown-preview-enhanced .github-syntax-theme .variable.language.js { color: rgb(238, 106, 66); }
+.markdown-preview-enhanced .github-syntax-theme .variable.parameter.function { color: rgb(181, 127, 0); }
+.markdown-preview-enhanced .github-syntax-theme .source.js .meta.function .entity.name.function, .markdown-preview-enhanced .github-syntax-theme .source.js .entity.name.function .meta.function { color: rgb(133, 103, 181); }
+.markdown-preview-enhanced .github-syntax-theme .source.php .entity.name.type.class { color: rgb(238, 106, 66); }
+.markdown-preview-enhanced .github-syntax-theme .punctuation.definition.heading.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.italic.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.bold.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.string.begin.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.string.end.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.metadata.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.link.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.blockquote.markdown, .markdown-preview-enhanced .github-syntax-theme .punctuation.definition.raw.markdown { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .punctuation.section.function.scss { color: rgb(99, 163, 92); }
+.markdown-preview-enhanced .github-syntax-theme .punctuation, .markdown-preview-enhanced .github-syntax-theme .meta.method-call, .markdown-preview-enhanced .github-syntax-theme .meta.method { color: rgb(51, 51, 51); }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .meta.separator { color: rgb(179, 179, 179); }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.raw.block { color: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.raw.inline { color: rgb(0, 0, 0); }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .meta.link, .markdown-preview-enhanced .github-syntax-theme .text.html.markdown .meta.image { color: rgb(65, 131, 196); }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.underline.link, .markdown-preview-enhanced .github-syntax-theme .text.html.markdown .constant.other.reference { font-style: italic; }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.list { color: rgb(238, 106, 66); }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.bold { font-weight: bold; }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.italic { font-style: italic; }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.bold .markup.italic { font-weight: bold; font-style: italic; }
+.markdown-preview-enhanced .github-syntax-theme .text.html.markdown .markup.italic .markup.bold { font-weight: bold; font-style: italic; }
+.markdown-preview-enhanced .github-syntax-theme .string.quoted.double.html .invalid.illegal.bad-ampersand.html { color: rgb(34, 115, 195); background-color: rgb(255, 255, 255); }
+.markdown-preview-enhanced .github-syntax-theme .bracket-matcher .region { border-bottom: 1px solid rgba(240, 192, 0, 0.8); z-index: 100; background-color: rgba(255, 214, 51, 0.0980392); }
+.markdown-preview-enhanced .github-syntax-theme .meta.tag.template.angular { color: rgb(34, 115, 195); }
+.markdown-preview-enhanced .github-syntax-theme .meta.tag.template.angular .punctuation.definition.block.begin.angular, .markdown-preview-enhanced .github-syntax-theme .meta.tag.template.angular .punctuation.definition.block.end.angular, .markdown-preview-enhanced .github-syntax-theme .meta.tag.template.angular .meta.brace.curly.js { color: rgb(173, 28, 93); }
+.markdown-preview-enhanced .github-syntax-theme .entity.other.attribute-name.html.angular, .markdown-preview-enhanced .github-syntax-theme .meta.attribute.html.angular { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors, .markdown-preview-enhanced[data-use-github-syntax-theme] .host { color: rgb(51, 51, 51) !important; background-color: rgb(247, 247, 247) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre { color: rgb(51, 51, 51) !important; background-color: rgb(247, 247, 247) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .gutter, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .gutter { color: rgb(179, 179, 179) !important; background-color: rgb(255, 255, 255) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .gutter .line-number.cursor-line, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .gutter .line-number.cursor-line { color: rgb(77, 77, 77) !important; background-color: rgb(245, 245, 245) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .gutter .line-number.cursor-line-no-selection, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .gutter .line-number.cursor-line-no-selection { color: rgb(77, 77, 77) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .wrap-guide, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .wrap-guide { color: rgb(223, 223, 223) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .indent-guide, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .indent-guide { color: rgb(223, 223, 223) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .invisible-character, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .invisible-character { color: rgb(223, 223, 223) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .search-results .marker .region, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .search-results .marker .region { border: rgb(0, 0, 0) !important; background-color: transparent !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors .search-results .marker.current-result .region, .markdown-preview-enhanced[data-use-github-syntax-theme] .host .search-results .marker.current-result .region { border: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors.is-focused .cursor, .markdown-preview-enhanced[data-use-github-syntax-theme] .host(.is-focused) .cursor { border-color: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors.is-focused .selection .region, .markdown-preview-enhanced[data-use-github-syntax-theme] .host(.is-focused) .selection .region { background-color: rgba(178, 215, 255, 0.4) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors.is-focused .line-number.cursor-line-no-selection, .markdown-preview-enhanced[data-use-github-syntax-theme] pre.editor-colors.is-focused .line.cursor-line, .markdown-preview-enhanced[data-use-github-syntax-theme] .host(.is-focused) .line-number.cursor-line-no-selection, .markdown-preview-enhanced[data-use-github-syntax-theme] .host(.is-focused) .line.cursor-line { background-color: rgba(240, 240, 240, 0.498039) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .comment, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.comment { color: rgb(176, 176, 176) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .string, .markdown-preview-enhanced[data-use-github-syntax-theme] .string .constant.character.escape { color: rgb(34, 115, 195) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .constant.numeric { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .constant.language { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .constant.character, .markdown-preview-enhanced[data-use-github-syntax-theme] .constant.other.rgb-value { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .constant.numeric.line-number.find-in-files, .markdown-preview-enhanced[data-use-github-syntax-theme] .constant.numeric.line-number.match.find-in-files { color: rgb(171, 176, 179) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.name.class { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.inherited-class { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.any.html, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.block.any.html { color: rgb(171, 176, 179) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.name.tag { color: rgb(99, 163, 92) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.name.function { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.attribute-name, .markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.attribute-name .punctuation.definition.entity.scss, .markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.attribute-name.id.css, .markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.attribute-name.id.css .punctuation.definition.entity.css, .markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.attribute-name.class.css .punctuation.definition.entity.css { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.tag.begin.html, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.tag.end.html, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.tag.html, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.block.any.html { color: rgb(51, 51, 51) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.control { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.operator { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .storage { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .storage.type { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .support.function { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .support.constant { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .support.type, .markdown-preview-enhanced[data-use-github-syntax-theme] .support.class, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.property-name.scss { color: rgb(0, 153, 204) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .support.other.variable { color: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .invalid, .markdown-preview-enhanced[data-use-github-syntax-theme] .invalid.illegal { color: rgb(248, 248, 248) !important; background-color: rgb(181, 42, 29) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .invalid.deprecated { color: rgb(181, 42, 29) !important; background-color: rgb(255, 255, 255) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.name.filename.find-in-files { color: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .source.css .punctuation.definition.entity, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.terminator.rule.scss { color: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .source.css .entity.other.attribute-name.pseudo-class, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.css .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .source.css .meta.value, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.css .support.constant, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.css .support.function { color: rgb(99, 163, 92) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .source.scss .entity.other.attribute-name.pseudo-class, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.scss .entity.other.attribute-name.pseudo-element { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .support.constant.property-value, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.scss .support.function, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.property-value.scss { color: rgb(99, 163, 92) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .variable, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.scss .variable, .markdown-preview-enhanced[data-use-github-syntax-theme] .variable.interpolation.scss, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.scss .meta.set.variable { color: rgb(222, 104, 173) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.control.else.scss, .markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.control.if.scss, .markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.control.content.scss { color: rgb(99, 163, 92) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.other.unit { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .keyword.other.important { color: rgb(235, 69, 53) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.name.tag.reference.scss { color: rgb(181, 127, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.name.type.new.js { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .variable.language.js { color: rgb(238, 106, 66) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .variable.parameter.function { color: rgb(181, 127, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .source.js .meta.function .entity.name.function, .markdown-preview-enhanced[data-use-github-syntax-theme] .source.js .entity.name.function .meta.function { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .source.php .entity.name.type.class { color: rgb(238, 106, 66) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.heading.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.italic.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.bold.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.string.begin.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.string.end.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.metadata.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.link.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.blockquote.markdown, .markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.definition.raw.markdown { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation.section.function.scss { color: rgb(99, 163, 92) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .punctuation, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.method-call, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.method { color: rgb(51, 51, 51) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .meta.separator { color: rgb(179, 179, 179) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.raw.block { color: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.raw.inline { color: rgb(0, 0, 0) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .meta.link, .markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .meta.image { color: rgb(65, 131, 196) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.underline.link, .markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .constant.other.reference { font-style: italic !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.list { color: rgb(238, 106, 66) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.bold { font-weight: bold !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.italic { font-style: italic !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.bold .markup.italic { font-weight: bold !important; font-style: italic !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .text.html.markdown .markup.italic .markup.bold { font-weight: bold !important; font-style: italic !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .string.quoted.double.html .invalid.illegal.bad-ampersand.html { color: rgb(34, 115, 195) !important; background-color: rgb(255, 255, 255) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .bracket-matcher .region { border-bottom: 1px solid rgba(240, 192, 0, 0.8) !important; z-index: 100 !important; background-color: rgba(255, 214, 51, 0.0980392) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.template.angular { color: rgb(34, 115, 195) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.template.angular .punctuation.definition.block.begin.angular, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.template.angular .punctuation.definition.block.end.angular, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.tag.template.angular .meta.brace.curly.js { color: rgb(173, 28, 93) !important; }
+.markdown-preview-enhanced[data-use-github-syntax-theme] .entity.other.attribute-name.html.angular, .markdown-preview-enhanced[data-use-github-syntax-theme] .meta.attribute.html.angular { color: rgb(133, 103, 181) !important; }
+.markdown-preview-enhanced[data-presentation-mode] { font-size: 24px; width: 100%; box-sizing: border-box; margin: 0px; padding: 0px; }
+.markdown-preview-enhanced[data-presentation-mode] h1, .markdown-preview-enhanced[data-presentation-mode] h2, .markdown-preview-enhanced[data-presentation-mode] h3, .markdown-preview-enhanced[data-presentation-mode] h4, .markdown-preview-enhanced[data-presentation-mode] h5, .markdown-preview-enhanced[data-presentation-mode] h6 { margin-top: 0px; }
+.markdown-preview-enhanced[data-presentation-mode] strong { font-weight: bold; }
+.markdown-preview-enhanced[data-presentation-mode]::-webkit-scrollbar { display: none; }
+.markdown-preview-enhanced .slides { text-align: left !important; }
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
@@ -107,6 +279,9 @@
 
 .spell-check-misspelling .region {
   border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
 }
 
 pre.editor-colors,
@@ -151,7 +326,7 @@ pre.editor-colors .find-result .region.region.region,
 .host .find-result .region.region.region,
 pre.editor-colors .current-result .region.region.region,
 .host .current-result .region.region.region {
-  border-radius: 0px;
+  border-radius: 2px;
   background-color: rgba(82, 139, 255, 0.24);
   transition: border-color 0.4s;
 }
@@ -419,6 +594,12 @@ pre.editor-colors .fold-marker:after,
 .markup.raw {
   color: #98c379;
 }
+.source.c .keyword.operator {
+  color: #c678dd;
+}
+.source.cpp .keyword.operator {
+  color: #c678dd;
+}
 .source.cs .keyword.operator {
   color: #c678dd;
 }
@@ -494,32 +675,310 @@ pre.editor-colors .fold-marker:after,
 .source.python .variable.parameter {
   color: #d19a66;
 }
-</style>
-  </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="-">下载</h1>
-<p>  <a href="https://apis.aliyun183.jcbel.com/file-warehouse/1/JCMapKit/1.1/download">JCMapKit</a></p>
-<p>  <a href="https://apis.aliyun183.jcbel.com/file-warehouse/1/JCMapKit/1.1/demo">Demo</a></p>
-<p>  <a href="http://zgp1027.github.io/JCMapKit1.1/html/index.html">API文档</a></p>
-<h1 id="-">工程配置</h1>
-<p>  1.引入JCMapKit,libc++</p>
-<p>  2.在info.plist文件中添加NSLocationWhenInUseUsageDescription:string</p>
-<p>  3.
-    创建地图配置plist文件,所有字段皆为必填项，按照顺序添加，添加的顺序对应定位相关的楼层索引</p>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;plist&nbsp;version=&quot;1.0&quot;&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;array&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;dict&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;key&gt;map&lt;/key&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;string&gt;map(地图文件名，后缀为jmk)&lt;/string&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;key&gt;name&lt;/key&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;string&gt;B2(地图名称)&lt;/string&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;key&gt;num&lt;/key&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;integer&gt;-2(楼层号)&lt;/integer&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;key&gt;uuid(对应beacon的uuid)&lt;/key&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;string&gt;FDA50693-A4E2-4FB1-AFCF-C6EB07647825&lt;/string&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;/dict&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;/array&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/plist&gt;</span></span></span></div></pre><p>  4.引入地图文件</p>
-<h1 id="-">加载建筑物(地图数据)</h1>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>[[JCMapKit&nbsp;getInstance]&nbsp;loadBuilding:[[NSBundle&nbsp;mainBundle]&nbsp;pathForResource:@&quot;map&quot;&nbsp;ofType:@&quot;plist&quot;]];</span></span></span></div></pre><h1 id="-mapview-">创建mapView,并显示地图</h1>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>JCMapView&nbsp;*mapView&nbsp;=&nbsp;[[JCMapView&nbsp;alloc]&nbsp;initWithFrame:self.view.bounds];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[mapView&nbsp;loadBuilding:[[JCMapKit&nbsp;getInstance]&nbsp;&nbsp;getBuilding]];//加载建筑</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[mapView&nbsp;setCurrentFloor:0];//显示指定索引的楼层，以plist文件顺序为准</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>mapView.delegate&nbsp;=&nbsp;self;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[self.view&nbsp;addSubview:mapView];</span></span></span></div></pre><h1 id="poi-">POI信息</h1>
-<h2 id="-poi-">添加Poi数据</h2>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//除LAYER_STALL类型图层外，其余图层都需要设置图片</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[mapView&nbsp;addLayer:LAYER_ELEVATOR&nbsp;image:[UIImage&nbsp;imageWithContentsOfFile:[[NSBundle&nbsp;mainBundle]&nbsp;pathForResource:@&quot;marker_wc&quot;&nbsp;ofType:@&quot;png&quot;]]];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[mapView&nbsp;addLayer:LAYER_STALL&nbsp;image:nil];</span></span></span></div></pre><h3 id="-layer_stall-">对LAYER_STALL 图层要素分别设置颜色或者文字</h3>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>NSArray&nbsp;*features&nbsp;=&nbsp;[mapView&nbsp;getLayerFeatures:@&quot;stall&quot;];</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>for&nbsp;(JCFeature&nbsp;*feature&nbsp;in&nbsp;features)&nbsp;{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>if&nbsp;([[feature&nbsp;getName]&nbsp;containsString:@&quot;5&quot;])&nbsp;{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>[mapView&nbsp;setStallColor:feature&nbsp;color:[UIColor&nbsp;greenColor]];</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h3 id="poi-">poi点击回调</h3>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(void)mapView:(JCMapView&nbsp;*)mapView&nbsp;tappedFeature:(JCFeature&nbsp;*)feature</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>self.mapView.calloutView.titleLabel.text&nbsp;=&nbsp;[feature&nbsp;getName];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;[self.mapView&nbsp;showCalloutForPosition:[feature&nbsp;getCenter]&nbsp;offset:CGPointZero&nbsp;animated:YES];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h2 id="-">添加标注</h2>
-<h3 id="-userannotation-">例userAnnotation//用户定位标注</h3>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(void)updateUserLocation:(JCMapLocation&nbsp;*)location</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>if&nbsp;(self.userAnnotation&nbsp;==&nbsp;nil)&nbsp;{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>self.userAnnotation&nbsp;=&nbsp;[JCAnnotation&nbsp;annotationWithPoint:CGPointMake(location.mapX,&nbsp;location.mapY)];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.userAnnotation.shouldScaleWithSupper&nbsp;=&nbsp;NO;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[self.mapView&nbsp;addAnnotation:self.userAnnotation&nbsp;animated:YES];</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;self.userAnnotation.point&nbsp;=&nbsp;CGPointMake(location.mapX,&nbsp;location.mapY);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h3 id="-jcannotationview-">任何标注都需要在此方法返回JCAnnotationView实例，否者无法显示</h3>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(JCAnnotationView&nbsp;*)mapView:(JCMapView&nbsp;*)mapView&nbsp;viewForAnnotation:(JCAnnotation&nbsp;*)annotation{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>if&nbsp;(annotation&nbsp;==&nbsp;self.userAnnotation)&nbsp;{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>JCUserAnnotationView&nbsp;*View&nbsp;=&nbsp;[[JCUserAnnotationView&nbsp;alloc]&nbsp;initWithAnnotation:annotation];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View.frame&nbsp;=&nbsp;CGRectMake(0,&nbsp;0,&nbsp;30,&nbsp;30);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;View;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;nil;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>};</span></span></span></div></pre><h3 id="-">标注点击触发</h3>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(void)mapView:(JCMapView&nbsp;*)mapView&nbsp;tappedOnAnnotation:(JCAnnotation&nbsp;*)annotation</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>JCFeature&nbsp;*feature&nbsp;=&nbsp;annotation.dataObject;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;//显示气泡</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;[self.mMapView&nbsp;showCalloutForPosition:annotation.point&nbsp;offset:CGPointMake(0,&nbsp;0)&nbsp;animated:YES];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h1 id="-">定位</h1>
-<h2 id="-">开启结束定位</h2>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[[JCMapKit&nbsp;getInstance]&nbsp;setDelegate:self];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[[JCMapKit&nbsp;getInstance]&nbsp;startUpdateUserLocation];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[[JCMapKit&nbsp;getInstance]&nbsp;stopUpdateUserLocation];</span></span></span></div></pre><h2 id="-delegate-">位置更新,通过delegate回调</h2>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(void)updateUserLocation:(JCMapLocation&nbsp;*)location</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>if&nbsp;(self.userAnnotation&nbsp;==&nbsp;nil)&nbsp;{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>self.userAnnotation&nbsp;=&nbsp;[JCAnnotation&nbsp;annotationWithPoint:CGPointMake(location.mapX,&nbsp;location.mapY)];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.userAnnotation.shouldScaleWithSupper&nbsp;=&nbsp;NO;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[self.mapView&nbsp;addAnnotation:self.userAnnotation&nbsp;animated:YES];</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;self.userAnnotation.point&nbsp;=&nbsp;CGPointMake(location.mapX,&nbsp;location.mapY);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre><h1 id="-">导航</h1>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>JCMapLocation&nbsp;*start&nbsp;=&nbsp;[[JCMapLocation&nbsp;alloc]&nbsp;initWithFloor:0&nbsp;X:self.userAnnotation.point.x&nbsp;Y:self.userAnnotation.point.y];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>JCMapLocation&nbsp;*end&nbsp;=&nbsp;[[JCMapLocation&nbsp;alloc]&nbsp;initWithFloor:0&nbsp;X:endpoint.x&nbsp;Y:endpoint.y];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//设置导航路线，使用默认样式则可不设置</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[self.mapView&nbsp;setNavigateChainColor:[UIColor&nbsp;redColor]];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//第一个拐角箭头颜色，可不设置</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[self.mapView&nbsp;setNavigateRoundCornerColor:[UIColor&nbsp;greenColor]];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//在mapView中绘制路线</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>JCNavigateChain&nbsp;*nc&nbsp;=&nbsp;[[JCMapKit&nbsp;getInstance]&nbsp;getNavigateChain:start&nbsp;end:end];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[self.mapView&nbsp;setNavigateChain:nc];</span></span></span></div></pre><h2 id="-">获取导航提示文字</h2>
-<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(void)updateHeading:(CLHeading&nbsp;*)newHeading</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>JCNavicStatus&nbsp;*status&nbsp;=&nbsp;[self.mapView.navigateChain&nbsp;getStatus:[[JCMapLocation&nbsp;alloc]&nbsp;initWithFloor:0&nbsp;X:self.userAnnotation.point.x&nbsp;Y:self.userAnnotation.point.y]&nbsp;azimuth:newHeading.magneticHeading];</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>NSArray&nbsp;*suggestions&nbsp;=&nbsp;@[@&quot;前行&quot;,@&quot;左前行&quot;,@&quot;向左行&quot;,@&quot;后转调头&quot;,@&quot;后转调头&quot;,@&quot;后转调头&quot;,@&quot;向右行&quot;,@&quot;右前行&quot;];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;NSArray&nbsp;*nextsegdirections&nbsp;=&nbsp;@[@&quot;左转&quot;,@&quot;右转&quot;,@&quot;到达&quot;];</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>NSLog(@&quot;%@&nbsp;%.1f米后&nbsp;%@&quot;,suggestions[status.suggestion],status.disttarget,nextsegdirections[status.nextsegdirection]);;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>}</span></span></span></div></pre></body>
-</html>
+ /* Flowchart variables */
+/* Sequence Diagram variables */
+/* Gantt chart variables */
+.mermaid .label {
+  color: #333;
+}
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon {
+  fill: #ECECFF;
+  stroke: #CCCCFF;
+  stroke-width: 1px;
+}
+.mermaid .edgePath .path {
+  stroke: #333333;
+}
+.mermaid .edgeLabel {
+  background-color: #e8e8e8;
+}
+.mermaid .cluster rect {
+  fill: #ffffde !important;
+  rx: 4 !important;
+  stroke: #aaaa33 !important;
+  stroke-width: 1px !important;
+}
+.mermaid .cluster text {
+  fill: #333;
+}
+.mermaid .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF;
+}
+.mermaid text.actor {
+  fill: black;
+  stroke: none;
+}
+.mermaid .actor-line {
+  stroke: grey;
+}
+.mermaid .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: "2 2";
+  marker-end: "url(#arrowhead)";
+  stroke: #333;
+}
+.mermaid .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: "2 2";
+  stroke: #333;
+}
+.mermaid #arrowhead {
+  fill: #333;
+}
+.mermaid #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important;
+}
+.mermaid .messageText {
+  fill: #333;
+  stroke: none;
+}
+.mermaid .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF;
+}
+.mermaid .labelText {
+  fill: black;
+  stroke: none;
+}
+.mermaid .loopText {
+  fill: black;
+  stroke: none;
+}
+.mermaid .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: "2 2";
+  marker-end: "url(#arrowhead)";
+  stroke: #CCCCFF;
+}
+.mermaid .note {
+  stroke: #aaaa33;
+  fill: #fff5ad;
+}
+.mermaid .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+/** Section styling */
+.mermaid .section {
+  stroke: none;
+  opacity: 0.2;
+}
+.mermaid .section0 {
+  fill: rgba(102, 102, 255, 0.49);
+}
+.mermaid .section2 {
+  fill: #fff400;
+}
+.mermaid .section1,
+.mermaid .section3 {
+  fill: white;
+  opacity: 0.2;
+}
+.mermaid .sectionTitle0 {
+  fill: #333;
+}
+.mermaid .sectionTitle1 {
+  fill: #333;
+}
+.mermaid .sectionTitle2 {
+  fill: #333;
+}
+.mermaid .sectionTitle3 {
+  fill: #333;
+}
+.mermaid .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+}
+/* Grid and axis */
+.mermaid .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges;
+}
+.mermaid .grid path {
+  stroke-width: 0;
+}
+/* Today line */
+.mermaid .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px;
+}
+/* Task styling */
+/* Default task */
+.mermaid .task {
+  stroke-width: 2;
+}
+.mermaid .taskText {
+  text-anchor: middle;
+  font-size: 11px;
+}
+.mermaid .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+}
+.mermaid .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px;
+}
+/* Specific task settings for the sections*/
+.mermaid .taskText0,
+.mermaid .taskText1,
+.mermaid .taskText2,
+.mermaid .taskText3 {
+  fill: white;
+}
+.mermaid .task0,
+.mermaid .task1,
+.mermaid .task2,
+.mermaid .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc;
+}
+.mermaid .taskTextOutside0,
+.mermaid .taskTextOutside2 {
+  fill: black;
+}
+.mermaid .taskTextOutside1,
+.mermaid .taskTextOutside3 {
+  fill: black;
+}
+/* Active task */
+.mermaid .active0,
+.mermaid .active1,
+.mermaid .active2,
+.mermaid .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc;
+}
+.mermaid .activeText0,
+.mermaid .activeText1,
+.mermaid .activeText2,
+.mermaid .activeText3 {
+  fill: black !important;
+}
+/* Completed task */
+.mermaid .done0,
+.mermaid .done1,
+.mermaid .done2,
+.mermaid .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2;
+}
+.mermaid .doneText0,
+.mermaid .doneText1,
+.mermaid .doneText2,
+.mermaid .doneText3 {
+  fill: black !important;
+}
+/* Tasks on the critical line */
+.mermaid .crit0,
+.mermaid .crit1,
+.mermaid .crit2,
+.mermaid .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2;
+}
+.mermaid .activeCrit0,
+.mermaid .activeCrit1,
+.mermaid .activeCrit2,
+.mermaid .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2;
+}
+.mermaid .doneCrit0,
+.mermaid .doneCrit1,
+.mermaid .doneCrit2,
+.mermaid .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges;
+}
+.mermaid .doneCritText0,
+.mermaid .doneCritText1,
+.mermaid .doneCritText2,
+.mermaid .doneCritText3 {
+  fill: black !important;
+}
+.mermaid .activeCritText0,
+.mermaid .activeCritText1,
+.mermaid .activeCritText2,
+.mermaid .activeCritText3 {
+  fill: black !important;
+}
+.mermaid .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+}
+/*
+
+
+*/
+.mermaid .node text {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100;
+}
+ </style> <link rel="stylesheet" href="file:////Users/zgp/.atom/packages/markdown-preview-enhanced/node_modules/katex/dist/katex.min.css">  </head> <body class="markdown-preview-enhanced " data-use-github-style data-use-github-syntax-theme > <h1 class="sync-line" data-line="0" id="&#x4E0B;&#x8F7D;">下载</h1>
+<p class="sync-line" data-line="1"><a href="./JCMapKit.framework.zip">JCMapKit</a><br>
+<a href="./demo.zip">Demo</a><br>
+<a href="./html/index.html">API文档</a></p>
+<h1 class="sync-line" data-line="4" id="&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;">工程配置</h1>
+<pre class="editor-colors lang-objc sync-line" data-line="5"><div class="line"><span class="source objc"><span class="constant numeric c"><span>1.</span></span><span>引入JCMapKit,libc</span><span class="keyword operator increment c"><span>++</span></span></span></div><div class="line"><span class="source objc"><span>&nbsp;</span></span></div><div class="line"><span class="source objc"><span class="constant numeric c"><span>2.</span></span><span>在info.plist文件中添加NSLocationWhenInUseUsageDescription:string</span></span></div><div class="line"><span class="source objc"><span>&nbsp;</span></span></div><div class="line"><span class="source objc"><span class="constant numeric c"><span>3</span></span><span>.</span></span></div><div class="line"><span class="source objc"><span>创建地图配置plist文件,所有字段皆为必填项，按照顺序添加，添加的顺序对应定位相关的楼层索引</span></span></div><div class="line"><span class="source objc"><span>&nbsp;</span></span></div><div class="line"><span class="source objc"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator comparison c"><span>&lt;</span></span><span>plist&nbsp;version</span><span class="keyword operator assignment c"><span>=</span></span><span class="string quoted double c"><span class="punctuation definition string begin c"><span>&quot;</span></span><span>1.0</span><span class="punctuation definition string end c"><span>&quot;</span></span></span><span class="keyword operator comparison c"><span>&gt;</span></span></span></div><div class="line"><span class="source objc"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator comparison c"><span>&lt;</span></span><span>array</span><span class="keyword operator comparison c"><span>&gt;</span></span></span></div><div class="line"><span class="source objc"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator comparison c"><span>&lt;</span></span><span>dict</span><span class="keyword operator comparison c"><span>&gt;</span></span></span></div><div class="line"><span class="source objc"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator comparison c"><span>&lt;</span></span><span>key</span><span class="keyword operator comparison c"><span>&gt;</span></span><span>map</span><span class="keyword operator comparison c"><span>&lt;</span></span><span class="keyword operator c"><span>/</span></span><span>key</span><span class="keyword operator comparison c"><span>&gt;</span></span></span></div><div class="line"><span class="source objc"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator comparison c"><span>&lt;</span></span><span>string</span><span class="keyword operator comparison c"><span>&gt;</span></span><span class="meta function c"><span class="entity name function c"><span>map</span></span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span>地图文件名，后缀为jmk</span><span class="punctuation section parens end c"><span>)</span></span></span><span>&lt;/string&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;key&gt;name&lt;/key&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;string&gt;B2</span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span>地图名称</span><span class="punctuation section parens end c"><span>)</span></span></span><span>&lt;/string&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;key&gt;num&lt;/key&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;integer&gt;-2</span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span>楼层号</span><span class="punctuation section parens end c"><span>)</span></span></span><span>&lt;/integer&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;key&gt;uuid</span><span class="meta parens c"><span class="punctuation section parens begin c"><span>(</span></span><span>对应beacon的uuid</span><span class="punctuation section parens end c"><span>)</span></span></span><span>&lt;/key&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;string&gt;FDA50693-A4E2-4FB1-AFCF-C6EB07647825&lt;/string&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/dict&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/array&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/plist&gt;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta function c"><span>4.引入地图文件</span></span></span></div></pre>
+<h1 class="sync-line" data-line="30" id="&#x52A0;&#x8F7D;&#x5EFA;&#x7B51;&#x7269;&#x5730;&#x56FE;&#x6570;&#x636E;">加载建筑物(地图数据)</h1>
+<pre class="editor-colors lang-objc sync-line" data-line="31"><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapKit&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getInstance</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>loadBuilding</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="support class cocoa"><span>NSBundle</span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>mainBundle</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>pathForResource</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>map</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>ofType</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>plist</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div></pre>
+<h1 class="sync-line" data-line="34" id="&#x521B;&#x5EFA;mapview&#x5E76;&#x663E;&#x793A;&#x5730;&#x56FE;">创建mapView,并显示地图</h1>
+<pre class="editor-colors lang-objc sync-line" data-line="35"><div class="line"><span class="source objc"><span>JCMapView&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>mapView&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>alloc</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>initWithFrame</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.view.bounds</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>loadBuilding</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapKit&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getInstance</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;&nbsp;getBuilding</span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>加载建筑</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>setCurrentFloor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant numeric c"><span>0</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>显示指定索引的楼层，以plist文件顺序为准</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span>mapView.delegate&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;self;</span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.view&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>addSubview</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>mapView</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div></pre>
+<h1 class="sync-line" data-line="42" id="poi&#x4FE1;&#x606F;">POI信息</h1>
+<h2 class="sync-line" data-line="43" id="&#x6DFB;&#x52A0;poi&#x6570;&#x636E;">添加Poi数据</h2>
+<pre class="editor-colors lang-objc sync-line" data-line="44"><div class="line"><span class="source objc"><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>常见类型</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_STALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>stall</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_AP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>ap</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_WC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>wc</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_SERV_DESK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>serv_desk</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_EXIT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>port</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_STAIRWAY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>stairway</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_ESCALATOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>escalator</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_ELEVATOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>elevator</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_MEETING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>meeting_room</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="storage modifier c"><span>static</span></span><span>&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSString</span></span><span class="keyword operator c"><span>*</span></span><span>&nbsp;LAYER_NEGOTIATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>negotiate_room</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span>&nbsp;</span></span></div><div class="line"><span class="source objc"><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>除LAYER_STALL类型图层外，其余图层都需要设置图片</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>addLayer</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>LAYER_ELEVATOR&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>image</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>UIImage&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>imageWithContentsOfFile</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="support class cocoa"><span>NSBundle</span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>mainBundle</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>pathForResource</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>marker_wc</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>ofType</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>png</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>addLayer</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>LAYER_STALL&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>image</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant language objc"><span>nil</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div></pre>
+<h3 class="sync-line" data-line="61" id="&#x5BF9;layer_stall-&#x56FE;&#x5C42;&#x8981;&#x7D20;&#x5206;&#x522B;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#x6216;&#x8005;&#x6587;&#x5B57;">对LAYER_STALL 图层要素分别设置颜色或者文字</h3>
+<pre class="editor-colors lang-objc sync-line" data-line="62"><div class="line"><span class="source objc"><span class="support class cocoa"><span>NSArray</span></span><span>&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>features&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getLayerFeatures</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>stall</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="keyword control c"><span>for</span></span><span>&nbsp;(JCFeature&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>feature&nbsp;in&nbsp;features)&nbsp;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control c"><span>if</span></span><span>&nbsp;(</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>feature&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getName</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>containsString</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>5</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>)&nbsp;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>setStallColor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>feature&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>color</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>UIColor&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>greenColor</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end c"><span>}</span></span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></div></pre>
+<h3 class="sync-line" data-line="70" id="poi&#x70B9;&#x51FB;&#x56DE;&#x8C03;">poi点击回调</h3>
+<pre class="editor-colors lang-objc sync-line" data-line="71"><div class="line"><span class="source objc"><span class="keyword operator c"><span>-</span></span><span>&nbsp;(</span><span class="storage type c"><span>void</span></span><span>)mapView:(JCMapView&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)mapView&nbsp;tappedFeature:(JCFeature&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)feature</span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>mapView</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>calloutView</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>titleLabel</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>text</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>feature&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getName</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>showCalloutForPosition</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>feature&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getCenter</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>offset</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>CGPointZero&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>animated</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant language objc"><span>YES</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></div></pre>
+<h2 class="sync-line" data-line="78" id="&#x6DFB;&#x52A0;&#x6807;&#x6CE8;">添加标注</h2>
+<h3 class="sync-line" data-line="79" id="&#x4F8B;userannotation&#x7528;&#x6237;&#x5B9A;&#x4F4D;&#x6807;&#x6CE8;">例userAnnotation//用户定位标注</h3>
+<pre class="editor-colors lang-objc sync-line" data-line="80"><div class="line"><span class="source objc"><span class="keyword operator c"><span>-</span></span><span>&nbsp;(</span><span class="storage type c"><span>void</span></span><span>)updateUserLocation:(JCMapLocation&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)location</span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control c"><span>if</span></span><span>&nbsp;(self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span>&nbsp;</span><span class="keyword operator comparison c"><span>==</span></span><span>&nbsp;</span><span class="constant language objc"><span>nil</span></span><span>)&nbsp;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCAnnotation&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>annotationWithPoint</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta function-call c"><span class="support function any-method c"><span>CGPointMake</span></span><span>(</span></span><span>location.mapX,&nbsp;location.mapY)</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>shouldScaleWithSupper</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="constant language objc"><span>NO</span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>addAnnotation</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.userAnnotation&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>animated</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant language objc"><span>YES</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end c"><span>}</span></span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>point</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span class="meta function-call c"><span class="punctuation whitespace function-call leading c"><span>&nbsp;</span></span><span class="support function any-method c"><span>CGPointMake</span></span><span class="punctuation definition parameters c"><span>(</span></span></span><span>location</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>mapX</span></span><span>,&nbsp;location</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>mapY</span></span><span>);</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></div></pre>
+<h3 class="sync-line" data-line="91" id="&#x4EFB;&#x4F55;&#x6807;&#x6CE8;&#x90FD;&#x9700;&#x8981;&#x5728;&#x6B64;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;jcannotationview&#x5B9E;&#x4F8B;&#x5426;&#x8005;&#x65E0;&#x6CD5;&#x663E;&#x793A;">任何标注都需要在此方法返回JCAnnotationView实例，否者无法显示</h3>
+<pre class="editor-colors lang-text sync-line" data-line="92"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>-&nbsp;(JCAnnotationView&nbsp;*)mapView:(JCMapView&nbsp;*)mapView&nbsp;viewForAnnotation:(JCAnnotation&nbsp;*)annotation{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>if&nbsp;(annotation&nbsp;==&nbsp;self.userAnnotation)&nbsp;{</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>JCUserAnnotationView&nbsp;*View&nbsp;=&nbsp;[[JCUserAnnotationView&nbsp;alloc]&nbsp;initWithAnnotation:annotation];</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View.frame&nbsp;=&nbsp;CGRectMake(0,&nbsp;0,&nbsp;30,&nbsp;30);</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;View;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;nil;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>};</span></span></span></div></pre>
+<h3 class="sync-line" data-line="102" id="&#x6807;&#x6CE8;&#x70B9;&#x51FB;&#x89E6;&#x53D1;">标注点击触发</h3>
+<pre class="editor-colors lang-objc sync-line" data-line="103"><div class="line"><span class="source objc"><span class="keyword operator c"><span>-</span></span><span>&nbsp;(</span><span class="storage type c"><span>void</span></span><span>)mapView:(JCMapView&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)mapView&nbsp;tappedOnAnnotation:(JCAnnotation&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)annotation</span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;JCFeature&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>feature&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;annotation</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>dataObject</span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation whitespace comment leading cpp"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>显示气泡</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mMapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>showCalloutForPosition</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>annotation.point&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>offset</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta function-call c"><span class="support function any-method c"><span>CGPointMake</span></span><span>(</span></span><span class="constant numeric c"><span>0</span></span><span>,&nbsp;</span><span class="constant numeric c"><span>0</span></span><span>)&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>animated</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant language objc"><span>YES</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></div></pre>
+<h1 class="sync-line" data-line="111" id="&#x5B9A;&#x4F4D;">定位</h1>
+<h2 class="sync-line" data-line="112" id="&#x5F00;&#x542F;&#x7ED3;&#x675F;&#x5B9A;&#x4F4D;">开启结束定位</h2>
+<pre class="editor-colors lang-objc sync-line" data-line="113"><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapKit&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getInstance</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>setDelegate</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapKit&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getInstance</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>startUpdateUserLocation</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapKit&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getInstance</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>stopUpdateUserLocation</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div></pre>
+<h2 class="sync-line" data-line="118" id="&#x4F4D;&#x7F6E;&#x66F4;&#x65B0;&#x901A;&#x8FC7;delegate&#x56DE;&#x8C03;">位置更新,通过delegate回调</h2>
+<pre class="editor-colors lang-objc sync-line" data-line="119"><div class="line"><span class="source objc"><span class="keyword operator c"><span>-</span></span><span>&nbsp;(</span><span class="storage type c"><span>void</span></span><span>)updateUserLocation:(JCMapLocation&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)location</span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control c"><span>if</span></span><span>&nbsp;(self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span>&nbsp;</span><span class="keyword operator comparison c"><span>==</span></span><span>&nbsp;</span><span class="constant language objc"><span>nil</span></span><span>)&nbsp;</span><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCAnnotation&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>annotationWithPoint</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta function-call c"><span class="support function any-method c"><span>CGPointMake</span></span><span>(</span></span><span>location.mapX,&nbsp;location.mapY)</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>shouldScaleWithSupper</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="constant language objc"><span>NO</span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>addAnnotation</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.userAnnotation&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>animated</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant language objc"><span>YES</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation section block end c"><span>}</span></span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;self</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>userAnnotation</span></span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>point</span></span><span>&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span class="meta function-call c"><span class="punctuation whitespace function-call leading c"><span>&nbsp;</span></span><span class="support function any-method c"><span>CGPointMake</span></span><span class="punctuation definition parameters c"><span>(</span></span></span><span>location</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>mapX</span></span><span>,&nbsp;location</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>mapY</span></span><span>);</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></div></pre>
+<h1 class="sync-line" data-line="130" id="&#x5BFC;&#x822A;">导航</h1>
+<pre class="editor-colors lang-objc sync-line" data-line="131"><div class="line"><span class="source objc"><span>JCMapLocation&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>start&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapLocation&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>alloc</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>initWithFloor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant numeric c"><span>0</span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>X</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.userAnnotation.point.x&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>Y</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.userAnnotation.point.y</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span>JCMapLocation&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>end&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapLocation&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>alloc</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>initWithFloor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant numeric c"><span>0</span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>X</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>endpoint.x&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>Y</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>endpoint.y</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>设置导航路线，使用默认样式则可不设置</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>setNavigateChainColor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>UIColor&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>redColor</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>第一个拐角箭头颜色，可不设置</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>setNavigateRoundCornerColor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>UIColor&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>greenColor</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="comment line double-slash cpp"><span class="punctuation definition comment cpp"><span>//</span></span><span>在mapView中绘制路线</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span>JCNavigateChain&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>nc&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapKit&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getInstance</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getNavigateChain</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>start&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>end</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>end</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div><div class="line"><span class="source objc"><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>setNavigateChain</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>nc</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></div></pre>
+<h2 class="sync-line" data-line="142" id="&#x83B7;&#x53D6;&#x5BFC;&#x822A;&#x63D0;&#x793A;&#x6587;&#x5B57;">获取导航提示文字</h2>
+<pre class="editor-colors lang-objc sync-line" data-line="143"><div class="line"><span class="source objc"><span class="keyword operator c"><span>-</span></span><span>&nbsp;(</span><span class="storage type c"><span>void</span></span><span>)updateHeading:(CLHeading&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>)newHeading</span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block begin c"><span>{</span></span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;JCNavicStatus&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>status&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="variable language objc"><span>self</span></span><span>.mapView.navigateChain&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>getStatus</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>JCMapLocation&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>alloc</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="meta function-call objc"><span class="support function any-method objc"><span>initWithFloor</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="constant numeric c"><span>0</span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>X</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.userAnnotation.point.x&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>Y</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span class="variable language objc"><span>self</span></span><span>.userAnnotation.point.y</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>&nbsp;</span><span class="support function any-method name-of-parameter objc"><span>azimuth</span><span class="punctuation separator arguments objc"><span>:</span></span></span><span>newHeading.magneticHeading</span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSArray</span></span><span>&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>suggestions&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;@</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>前行</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>左前行</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>向左行</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>后转调头</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>后转调头</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>后转调头</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>向右行</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>右前行</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support class cocoa"><span>NSArray</span></span><span>&nbsp;</span><span class="keyword operator c"><span>*</span></span><span>nextsegdirections&nbsp;</span><span class="keyword operator assignment c"><span>=</span></span><span>&nbsp;@</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>左转</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>右转</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span>到达</span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span class="punctuation section scope end objc"><span>]</span></span></span><span>;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span>&nbsp;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation whitespace support function leading cocoa"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="support function cocoa"><span>NSLog</span></span><span>(</span><span class="string quoted double objc"><span class="punctuation definition string begin objc"><span>@&quot;</span></span><span class="constant other placeholder objc"><span>%@</span></span><span>&nbsp;</span><span class="constant other placeholder c"><span>%.1f</span></span><span>米后&nbsp;</span><span class="constant other placeholder objc"><span>%@</span></span><span class="punctuation definition string end objc"><span>&quot;</span></span></span><span>,suggestions</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>status.suggestion</span><span class="punctuation section scope end objc"><span>]</span></span></span><span>,status</span><span class="punctuation separator dot-access c"><span>.</span></span><span class="variable other member c"><span>disttarget</span></span><span>,nextsegdirections</span><span class="meta bracketed objc"><span class="punctuation section scope begin objc"><span>[</span></span><span>status.nextsegdirection</span><span class="punctuation section scope end objc"><span>]</span></span></span><span>);;</span></span></span></div><div class="line"><span class="source objc"><span class="meta block c"><span class="punctuation section block end c"><span>}</span></span></span></span></div></pre>
+ </body>  </html>
